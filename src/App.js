@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import { Fragment } from "react";
+import SelectVariants from "./pages/select";
 import './App.css';
+import Logo from './img/Logo.png'
+// import { Link, Route, Routes } from "react-router-dom";
+import * as React from 'react';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Fragment>
+      <header className="header">
+        <div className="navbar">
+          <img className="navbar__logo" src={Logo} alt="logo" />
+
+          <TextField id="outlined-basic" label="Search bar" variant="outlined" className="navbar__search" />
+
+          <SelectVariants />
+
+          {/* <Link to={"/"} className="header__menu-link">Become a Mentor</Link> */}
+
+          <Stack spacing={2} direction="row" className="buttons">
+            <Button variant="outlined">Login</Button>
+            <Button variant="contained">Sing Up</Button>
+          </Stack>
+
+        </div>
+
       </header>
-    </div>
+    </Fragment>
   );
 }
 
