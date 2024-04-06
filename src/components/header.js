@@ -39,7 +39,26 @@ export default function Header() {
             <div className='info'>
                 <h1 className='info__title'>Find the Best Courses and Amazing Mentor</h1>
                 <p className='info__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
-                
+                <ul features>
+                    <li className=''>
+                    <i class="bi bi-stopwatch"></i>
+                        <p>
+Life time acces
+                        </p>
+                    </li>
+                    <li className=''>
+                        <img src="" alt="" />
+                        <p>
+
+                        </p>
+                    </li>
+                    <li className=''>
+                        <img src="" alt="" />
+                        <p>
+
+                        </p>
+                    </li>
+                </ul>
             </div>
 
         </header>

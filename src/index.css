@@ -45,7 +45,7 @@ a, label, input, button, textarea {
   /* background-color: blue; */
   margin: 50px 150px;
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .logo{
@@ -60,6 +60,7 @@ a, label, input, button, textarea {
   height: 50px;
   color: white;
   font-size: 22px;
+  font-weight: 500;
   border-radius: 10px;
   position: absolute;
   top: 40px;
@@ -89,17 +90,19 @@ left: 1050px;
   width: 120px;
   height: 60px;
   border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  background: local;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  background-color: white;
   position: absolute;
-  top: 25px;
-  left: 1300px;
+  top: 30px;
+  left: 1350px;
   
 }
 
-.singup{
-  background-color: brown;
+button.singup{
+  background-color: rgb(69, 132, 82);
+  color: white;
   margin-left: 150px;
 }
 
