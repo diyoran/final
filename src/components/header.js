@@ -32,9 +32,12 @@ export default function Header() {
                     <button className='singup'>Sing Up</button>
                 </div>
 
+            </div>
 
+            <div className='info'>
 
             </div>
+
         </header>
     )
 }
