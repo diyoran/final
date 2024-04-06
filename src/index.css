@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chathura:wght@100;300;400;700;800&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chathura:wght@100;300;400;700;800&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +9,7 @@
 }
 
 body{
-  background-color: rgb(20, 20, 26);
+  background-color: rgb(39, 39, 49);
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -35,10 +37,7 @@ a, label, input, button, textarea {
   cursor: pointer;
 }
 
-.wrapper{
-  width: 1920px;
-  margin: 50px auto;
-}
+
 
 .navbar{
   width: 1500;
@@ -60,6 +59,7 @@ a, label, input, button, textarea {
   background: local;
   height: 50px;
   color: white;
+  font-size: 22px;
   border-radius: 10px;
   position: absolute;
   top: 40px;
@@ -101,4 +101,27 @@ left: 1050px;
 .singup{
   background-color: brown;
   margin-left: 150px;
+}
+
+.info{
+  margin: 20px 40px;
+  border-radius: 10px;
+  background-color: rgb(231, 228, 234);
+  color: black;
+  width: 1800px;
+  height: 750px;
+
+}
+
+.info__title{
+  font-size: 64px;
+  width: 600px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+}
+
+.info__subtitle{
+  font-size: 20px;
+  width: 640px;
+  font-weight: normal;
 }

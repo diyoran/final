@@ -4,7 +4,8 @@ import Logo from '../img/Logo.png'
 export default function Header() {
     return (
         <header>
-            <div className='navbar'>
+            <div className='fix'>
+                <div className='navbar'>
 
                 <img src={Logo} alt="logo" className='logo' />
                 <input type="search" placeholder='Search bar' className='searchbar' />
@@ -33,9 +34,12 @@ export default function Header() {
                 </div>
 
             </div>
+            </div>
 
             <div className='info'>
-
+                <h1 className='info__title'>Find the Best Courses and Amazing Mentor</h1>
+                <p className='info__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
+                
             </div>
 
         </header>
