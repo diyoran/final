@@ -13,7 +13,7 @@ export default function Main() {
                     <li className='feature'>
                         <img src={time} alt="icon" />
                         <p>
-                            Life Time Acces
+                            Life Time Accses
                         </p>
                     </li>
                     <li className='feature'>
