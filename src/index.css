@@ -2,13 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chathura:wght@100;300;400;700;800&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: rgb(39, 39, 49);
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -27,33 +27,52 @@ ul {
   list-style-type: none;
 }
 
-a, span, label, input, button, b, i, textarea{
+a,
+span,
+label,
+input,
+button,
+b,
+i,
+textarea {
   display: inline-block;
   font-family: inherit;
   font-weight: inherit;
 }
 
-a, label, input, button, textarea {
+a,
+label,
+input,
+button,
+textarea {
   cursor: pointer;
 }
 
 
-.navbar{
-  width: 1500;
+.navbar {
+  width: 1650px;
   height: 120px;
-  /* background-color: blue; */
-  margin: 50px 150px;
-  position: relative;
+  margin: 30px 130px;
+  position: fixed;
   font-size: 25px;
+  display: inline;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+
 }
 
-.logo{
+
+
+.logo {
   width: 150px;
   position: absolute;
   top: 50px;
+  left: 30px;
 }
 
-.searchbar{
+.searchbar {
   width: 500px;
   background: local;
   height: 50px;
@@ -63,29 +82,30 @@ a, label, input, button, textarea {
   border-radius: 10px;
   position: absolute;
   top: 40px;
-  left: 250px;
+  left: 230px;
 }
 
-.options{
+.options {
   position: absolute;
   top: 50px;
-  left: 850px;
-  
+  left: 800px;
+
 }
 
-#select{
+#select {
   background: local;
 }
 
-.mentor{
-text-decoration: none;
-color: white;
-position: absolute;
-top: 50px;
-left: 1050px;
+.mentor {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 1000px;
+
 }
 
-.buttons button{
+.buttons button {
   width: 120px;
   height: 60px;
   border-radius: 10px;
@@ -96,30 +116,22 @@ left: 1050px;
   position: absolute;
   top: 30px;
   left: 1350px;
-  
+
 }
 
-button.singup{
+button.singup {
   background-color: rgb(250, 70, 190);
   color: rgb(12, 12, 12);
   margin-left: 150px;
 }
 
-.info{
-  margin: 20px 40px;
-  border-radius: 10px;
-  /* background-color: rgb(231, 228, 234); */
-  background: url(./img/header.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  width: 1800px;
+.info {
+  width: 1000px;
   height: 750px;
-  position: relative;
 
 }
 
-.info__title{
+.info__title {
   font-size: 80px;
   width: 600px;
   font-family: "Nanum Myeongjo", serif;
@@ -129,7 +141,7 @@ button.singup{
   left: 100px;
 }
 
-.info__subtitle{
+.info__subtitle {
   font-size: 30px;
   width: 640px;
   font-weight: normal;
@@ -138,23 +150,23 @@ button.singup{
   left: 100px;
 }
 
-.feature{
+.feature {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
 }
 
-.feature img{
+.feature img {
   width: 50px;
 }
 
-.feature p{
+.feature p {
   font-size: 25px;
   font-weight: 500;
 }
 
-.info ul{
+.info ul {
   display: flex;
   flex-direction: row;
   gap: 60px;
@@ -163,4 +175,25 @@ button.singup{
   left: 100px;
 }
 
+.carosel{
+  width: 500px;
+  height: 700px;
+  background-color: blueviolet;
+  margin: 25px 150px;
+  border-radius: 15px;
+}
 
+.banner{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 40px;
+  border-radius: 10px;
+  background: url(./img/header.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  width: 1800px;
+  height: 750px;
+  position: relative;
+  top: 250px;
+}
