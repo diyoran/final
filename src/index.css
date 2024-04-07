@@ -177,9 +177,9 @@ button.singup {
 
 .carosel{
   width: 500px;
-  height: 700px;
+  height: 500px;
   background-color: blueviolet;
-  margin: 25px 150px;
+  margin: 125px 150px;
   border-radius: 15px;
 }
 
@@ -197,3 +197,5 @@ button.singup {
   position: relative;
   top: 250px;
 }
+
+

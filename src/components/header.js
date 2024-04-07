@@ -3,6 +3,7 @@ import Logo from '../img/Logo.png'
 import time from '../img/icons/time.svg'
 import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
+import Carousel from './carousel'
 
 export default function Header() {
     return (
@@ -66,7 +67,7 @@ export default function Header() {
                 </div>
 
                 <div className='carosel'>
-
+<Carousel/>
                 </div>
             </div>
 
