@@ -1,9 +1,9 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import artist from '../img/artist.jpg'
-import programmer from '../img/programmer.jpg'
-import copywriter from '../img/copywriter.jpg'
+import artist from '../img/artist.png'
+import programmer from '../img/programmer.png'
+import copywriter from '../img/copywriter.png'
 
 export default class Carousel extends React.Component {
   render() {
@@ -14,7 +14,7 @@ export default class Carousel extends React.Component {
         totalSlides={3}
         infinite={true}
         isPlaying={true}
-        interval={1000}
+        interval={3000}
         
       >
         <Slider className='slider'>

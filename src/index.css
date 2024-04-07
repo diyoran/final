@@ -52,7 +52,7 @@ textarea {
 .navbar {
   width: 1650px;
   height: 120px;
-  margin: 30px 130px;
+  margin: 0px 130px;
   position: fixed;
   font-size: 25px;
   display: inline;
@@ -66,10 +66,13 @@ textarea {
 
 
 .logo {
-  width: 150px;
+  width: 300px;
+  size: 100px;
   position: absolute;
-  top: 50px;
-  left: 30px;
+  top: -90px;
+  left: -40px;
+
+
 }
 
 .searchbar {
@@ -117,6 +120,11 @@ textarea {
   top: 30px;
   left: 1350px;
 
+}
+
+.buttons button:hover {
+  background-color: rgb(73, 61, 77);
+  color: white;
 }
 
 button.singup {
@@ -175,15 +183,14 @@ button.singup {
   left: 100px;
 }
 
-.carosel{
+.carosel {
   width: 500px;
   height: 500px;
-  background-color: blueviolet;
   margin: 125px 150px;
   border-radius: 15px;
 }
 
-.banner{
+.banner {
   display: flex;
   flex-direction: row;
   margin: 20px 40px;
@@ -195,7 +202,53 @@ button.singup {
   width: 1800px;
   height: 750px;
   position: relative;
-  top: 250px;
+  top: 180px;
 }
 
+.footer-wrapper {
+  background-color: rgb(44, 33, 51);
+  color: white;
+  width: 1800px;
+  height: 400px;
+  margin: 200px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  font-size: 20px;
+}
+
+.footer-info {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  margin: 130px 30px;
+  
+}
+
+.footer-info a {
+  text-decoration: none;
+  color: white;
+  padding-top: 30px;
+
+}
+
+.footer-articles {
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 80px;
+  
+}
+
+.footer-articles li {
+  padding-top: 15px;
+}
+
+.footer-articles ul h3 {
+  text-decoration: underline;
+}
 
