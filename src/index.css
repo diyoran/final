@@ -38,7 +38,6 @@ a, label, input, button, textarea {
 }
 
 
-
 .navbar{
   width: 1500;
   height: 120px;
@@ -101,30 +100,67 @@ left: 1050px;
 }
 
 button.singup{
-  background-color: rgb(69, 132, 82);
-  color: white;
+  background-color: rgb(250, 70, 190);
+  color: rgb(12, 12, 12);
   margin-left: 150px;
 }
 
 .info{
   margin: 20px 40px;
   border-radius: 10px;
-  background-color: rgb(231, 228, 234);
+  /* background-color: rgb(231, 228, 234); */
+  background: url(./img/header.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: black;
   width: 1800px;
   height: 750px;
+  position: relative;
 
 }
 
 .info__title{
-  font-size: 64px;
+  font-size: 80px;
   width: 600px;
   font-family: "Nanum Myeongjo", serif;
   font-weight: bold;
+  position: absolute;
+  top: 80px;
+  left: 100px;
 }
 
 .info__subtitle{
-  font-size: 20px;
+  font-size: 30px;
   width: 640px;
   font-weight: normal;
+  position: absolute;
+  top: 400px;
+  left: 100px;
 }
+
+.feature{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.feature img{
+  width: 50px;
+}
+
+.feature p{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.info ul{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  position: absolute;
+  top: 600px;
+  left: 100px;
+}
+
+
