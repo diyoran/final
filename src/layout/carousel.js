@@ -24,8 +24,9 @@ function CarouselFadeExample() {
         </Carousel.Caption>
       </Carousel.Item>
 
-
+      
       <Carousel.Item>
+        
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

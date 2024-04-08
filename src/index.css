@@ -109,6 +109,18 @@ textarea {
 
 }
 
+
+
+
+
+
+/* BUTTONS START  */
+
+
+
+
+
+
 .buttons button {
   width: 100px;
   height: 60px;
@@ -121,7 +133,7 @@ textarea {
   position: absolute;
   top: 30px;
   left: 1350px;
-  display: none;
+  display: block;
 
 }
 
@@ -129,35 +141,35 @@ textarea {
   background-color: rgb(73, 61, 77);
 }
 
-button.singup{
+button.singup {
   background: local;
   border: 2px solid rgb(250, 70, 190);
   color: white;
   margin-left: 150px;
 }
 
-#logout-btn{
+#logout-btn {
   border: 2px solid red;
   background: local;
   color: white;
   margin-left: 150px;
-  display: block;
+  display: none;
 }
 
-#logout-btn:hover{
-  background-color: rgb(73, 61, 77); 
-  
+#logout-btn:hover {
+  background-color: rgb(73, 61, 77);
+
 }
 
-#profile-btn{
-  display: block;
+#profile-btn {
+  display: none;
   border: 2px solid greenyellow;
   padding-left: 20px;
 }
 
 #profile-btn img {
   width: 50px;
-  
+
 }
 
 .info {
@@ -216,7 +228,7 @@ button.singup{
   height: 500px;
   margin: 125px 150px;
   border-radius: 15px;
-  
+
 }
 
 .banner {
@@ -253,7 +265,7 @@ button.singup{
   display: flex;
   flex-direction: column;
   margin: 130px 30px;
-  
+
 }
 
 .footer-info a {
@@ -270,7 +282,7 @@ button.singup{
   flex-direction: row;
   margin-top: 50px;
   gap: 80px;
-  
+
 }
 
 .footer-articles li {
@@ -280,4 +292,3 @@ button.singup{
 .footer-articles ul h3 {
   text-decoration: underline;
 }
-
