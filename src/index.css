@@ -55,7 +55,7 @@ textarea {
   margin: 0px 130px;
   position: fixed;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
   display: inline;
   z-index: 1;
   -webkit-backdrop-filter: blur(10px);
@@ -78,11 +78,12 @@ textarea {
 .searchbar {
   width: 500px;
   background: local;
+  border: 2px solid white;
   height: 50px;
   color: white;
   font-size: 22px;
-  font-weight: 500;
-  border-radius: 10px;
+  font-weight: 300;
+  border-radius: 5px;
   position: absolute;
   top: 40px;
   left: 230px;
@@ -109,28 +110,54 @@ textarea {
 }
 
 .buttons button {
-  width: 120px;
+  width: 100px;
   height: 60px;
   border-radius: 10px;
-  font-size: 25px;
-  font-weight: 600;
-  color: black;
-  background-color: white;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  background: local;
+  border: 2px solid greenyellow;
   position: absolute;
   top: 30px;
   left: 1350px;
+  display: none;
 
 }
 
 .buttons button:hover {
   background-color: rgb(73, 61, 77);
-  color: white;
 }
 
-button.singup {
-  background-color: rgb(250, 70, 190);
-  color: rgb(12, 12, 12);
+button.singup{
+  background: local;
+  border: 2px solid rgb(250, 70, 190);
+  color: white;
   margin-left: 150px;
+}
+
+#logout-btn{
+  border: 2px solid red;
+  background: local;
+  color: white;
+  margin-left: 150px;
+  display: block;
+}
+
+#logout-btn:hover{
+  background-color: rgb(73, 61, 77); 
+  
+}
+
+#profile-btn{
+  display: block;
+  border: 2px solid greenyellow;
+  padding-left: 20px;
+}
+
+#profile-btn img {
+  width: 50px;
+  
 }
 
 .info {
@@ -170,6 +197,7 @@ button.singup {
 }
 
 .feature p {
+  margin-top: 15px;
   font-size: 25px;
   font-weight: 500;
 }
@@ -188,6 +216,7 @@ button.singup {
   height: 500px;
   margin: 125px 150px;
   border-radius: 15px;
+  
 }
 
 .banner {

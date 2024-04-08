@@ -1,7 +1,7 @@
 import time from '../img/icons/time.svg'
 import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
-import Carousel from '../components/carousel'
+import CarouselFadeExample from '../layout/carousel'
 
 export default function Main() {
     return (
@@ -32,7 +32,7 @@ export default function Main() {
             </div>
 
             <div className='carosel'>
-                <CarouselFade/>
+              <CarouselFadeExample/>
             </div>
         </div>
     )
