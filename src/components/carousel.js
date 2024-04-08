@@ -1,28 +1,36 @@
 import React from 'react';
-import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import artist from '../img/artist.png'
 import programmer from '../img/programmer.png'
 import copywriter from '../img/copywriter.png'
+import Carousel from 'react-bootstrap/Carousel';
+import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
-export default class Carousel extends React.Component {
-  render() {
-    return (
-      <CarouselProvider
-        naturalSlideWidth={500}
-        naturalSlideHeight={500}
-        totalSlides={3}
-        infinite={true}
-        isPlaying={true}
-        interval={3000}
-        
-      >
-        <Slider className='slider'>
-          <Slide index={0}><img src={artist} alt="error" /></Slide>
-          <Slide index={1}><img src={programmer} alt="error" /></Slide>
-          <Slide index={2}><img src={copywriter} alt="error" /></Slide>
-        </Slider>
-      </CarouselProvider>
-    );
-  }
+ export default function CarouselFade() {
+  return (
+    <Carousel fade>
+      <Carousel.Item>
+        <ExampleCarouselImage text="First slide" />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Second slide" />
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <ExampleCarouselImage text="Third slide" />
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
 }

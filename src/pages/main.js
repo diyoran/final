@@ -32,7 +32,7 @@ export default function Main() {
             </div>
 
             <div className='carosel'>
-                <Carousel />
+                <CarouselFade/>
             </div>
         </div>
     )
