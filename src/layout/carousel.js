@@ -1,12 +1,11 @@
 import Carousel from 'react-bootstrap/Carousel';
 import artist from '../img/artist.png'
+import programmer from '../img/programmer.png'
 
 
 function CarouselFadeExample() {
   return (
     <Carousel fade>
-
-
       <Carousel.Item>
         <img src={artist} className='carousel' alt="error" />
         <Carousel.Caption>
@@ -18,7 +17,7 @@ function CarouselFadeExample() {
 
       <Carousel.Item>
         <Carousel.Caption>
-        
+        <img src={programmer} className='carousel' alt="error" />
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
@@ -26,7 +25,7 @@ function CarouselFadeExample() {
 
       
       <Carousel.Item>
-        
+      <img src={artist} className='carousel' alt="error" />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

@@ -1,11 +1,14 @@
+import React from 'react'
+import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
 import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
 import CarouselFadeExample from '../layout/carousel'
+import Cards from '../components/card/card'
 
 export default function Main() {
     return (
-        <div className='main-wrapper'>
+        <Fragment className='main-wrapper'>
             <div className='banner'>
                 <div className='info'>
                     <h1 className='info__title'>Find the Best Courses and Amazing Mentor</h1>
@@ -37,46 +40,12 @@ export default function Main() {
                 </div>
             </div>
 
-            <div className='trend-courses'>
-                <h1>
-                    Top Categories
-                </h1>
-                <ul>
-                    <li className='info-card'>
-                        <img src="" alt="error" />
-                        <h5>
-                        Art & Design
-                        </h5>
-                    </li>
-                    <li className='info-card'>
-                        <img src="" alt="error" />
-                        <h5>
-                        Business
-                        </h5>
-                    </li>
-                    <li className='info-card'>
-                        <img src="" alt="error" />
-                        <h5>
-                        Business
-                        </h5>
-                    </li>
-                    <li className='info-card'>
-                        <img src="" alt="error" />
-                        <h5>
-                        Marketing
-                        </h5>
-                    </li>
-                    <li className='info-card'>
-                        <img src="" alt="error" />
-                        <h5>
-
-                        </h5>
-                    </li>
-                </ul>
-
+            <div className='cards'>
+                <Cards />
             </div>
 
-        </div>
+
+        </Fragment>
 
 
 
