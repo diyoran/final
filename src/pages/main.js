@@ -3,8 +3,8 @@ import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
 import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
-import CarouselFadeExample from '../layout/carousel'
-import Cards from '../components/card/card'
+import CarouselFadeExample from '../components/carousel'
+import Cards from '../components/card'
 
 export default function Main() {
     return (
