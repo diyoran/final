@@ -6,6 +6,7 @@ import video from '../img/icons/video.svg'
 import people from '../img/icons/people.svg'
 import flag from '../img/icons/flag.svg'
 import art from '../img/artCard.jpg'
+import mentorImg from '../img/mentor_img.png'
 import CarouselFadeExample from '../components/carousel'
 import Cards from '../components/card'
 
@@ -76,7 +77,7 @@ export default function Main() {
             <div className="counter">
                 <ul className="counter__list">
                     <li className="counter__item">
-                        <img className="counter__img"  src={video} alt="error" />
+                        <img className="counter__img" src={video} alt="error" />
                         <p className='counter__number'>
                             10.000+
                         </p>
@@ -85,7 +86,7 @@ export default function Main() {
                         </p>
                     </li>
                     <li className="counter__item">
-                        <img className="counter__img"  src={people} alt="error" />
+                        <img className="counter__img" src={people} alt="error" />
                         <p className='counter__number'>
                             50.000+
                         </p>
@@ -94,7 +95,7 @@ export default function Main() {
                         </p>
                     </li>
                     <li className="counter__item">
-                        <img className="counter__img"  src={mentor} alt="error" />
+                        <img className="counter__img" src={mentor} alt="error" />
                         <p className='counter__number'>
                             1000+
                         </p>
@@ -103,7 +104,7 @@ export default function Main() {
                         </p>
                     </li>
                     <li className="counter__item">
-                        <img className="counter__img"  src={flag} alt="error" />
+                        <img className="counter__img" src={flag} alt="error" />
                         <p className='counter__number'>
                             150
                         </p>
@@ -112,6 +113,19 @@ export default function Main() {
                         </p>
                     </li>
                 </ul>
+            </div>
+
+            <div className="table">
+                <img className="table__img" src={mentorImg} alt="" />
+                <div className='table__txt'>
+                    <h1 className="table__title">
+                        Become a Mentor
+                    </h1>
+                    <p className="table__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
+                    </p>
+                </div>
             </div>
 
 

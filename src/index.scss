@@ -201,9 +201,9 @@ button.singup {
 .footer-wrapper {
   background-color: rgb(44, 33, 51);
   color: white;
-  width: 1800px;
+  width: max;
   height: 400px;
-  margin: 200px 40px;
+  margin: 200px 0px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -329,7 +329,7 @@ button.singup {
 .counter{
   color: black;
   width: 1800px;
-  margin: 150px 0;
+  margin: 150px 0 0;
   display: flex;
   justify-content: center;
   
@@ -363,6 +363,31 @@ button.singup {
 
   p{
     font-weight: 500;
+  }
+
+}
+
+.table{
+  width: 1400px;
+  margin: 50px 150px;
+  border-color: aqua;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  &__img{
+    width: 500px;
+  }
+
+  &__title{
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: "Nanum Myeongjo", serif;
+  }
+
+  &__text{
+    font-size: 25px;
+    text-justify: newspaper;
   }
 
 }
