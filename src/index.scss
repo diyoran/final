@@ -254,7 +254,7 @@ button.singup {
 
 .cards h1{
   font-family: "Nanum Myeongjo", serif;
-  margin: 60px;
+  margin: 80px;
   text-align: center;
   font-size: 50px;
   text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
@@ -266,7 +266,7 @@ button.singup {
     width: 1500px;
     display: flex;
     justify-content: space-evenly;
-    margin:  0 0 40px 0;
+    margin: 50px 0;
   }
 
   &__button {
@@ -324,4 +324,45 @@ button.singup {
 
 .categories__card:hover{
   filter: brightness(70%);
+}
+
+.counter{
+  color: black;
+  width: 1800px;
+  margin: 150px 0;
+  display: flex;
+  justify-content: center;
+  
+
+  &__list{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+  }
+
+  &__item{
+    align-items: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img{
+
+    width: 60px;
+  }
+
+  &__number{
+    font-size: 30px;
+  }
+
+  &__text{
+    font-size: 15px;
+  }
+
+  p{
+    font-weight: 500;
+  }
+
 }
