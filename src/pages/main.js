@@ -3,6 +3,7 @@ import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
 import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
+import art from '../img/artCard.jpg'
 import CarouselFadeExample from '../components/carousel'
 import Cards from '../components/card'
 
@@ -42,6 +43,32 @@ export default function Main() {
 
             <div className='cards'>
                 <Cards />
+            </div>
+
+            <div className="categories">
+                <h1>Top Categories</h1>
+                <ul className="categories__cards">
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
+                </ul>
             </div>
 
 

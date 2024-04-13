@@ -135,6 +135,7 @@ button.singup {
     position: absolute;
     top: 80px;
     left: 100px;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
   }
 
   &__subtitle {
@@ -244,22 +245,79 @@ button.singup {
   text-decoration: underline;
 }
 
-.cards{
+.cards {
   position: relative;
   width: 1500px;
-  margin: 250px 200px;
+  margin: 250px 200px 0;
+  
 }
 
-.card{
+.cards h1{
+  font-family: "Nanum Myeongjo", serif;
+  margin: 80px;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+}
 
-  &__buttons{
+.card {
+
+  &__buttons {
     width: 1500px;
     display: flex;
     justify-content: space-evenly;
     margin: 20px 0;
   }
 
-  &__button{
+  &__button {
     width: 200px;
   }
-}                                           
+}
+
+.categories {
+  width: 1500px;
+  margin: 100px 160px;
+  text-align: center;
+  font-family: "Nanum Myeongjo", serif;
+
+  &__cards{
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 0 70px;
+    
+  }
+  
+
+  &__card {
+    width: 400px;
+    height: 500px;
+    margin: 20px 0;
+  }
+
+  &__img {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+  }
+
+  &__text {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+
+  }
+
+  h1{
+    font-size: 50px;
+    font-family: "Nanum Myeongjo", serif;
+    margin: 80px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+  }
+
+}
