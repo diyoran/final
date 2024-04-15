@@ -1,4 +1,5 @@
 import uxui from '../img/uxui.png'
+import posterCard from '../img/posterCard.webp'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -32,7 +33,7 @@ function Cards() {
         {Array.from({ length: 6 }).map((_, idx) => (
           <Col key={idx}>
             <Card style={{ width: '25rem' }}>
-              <Card.Img variant="top" src={uxui} />
+              <Card.Img variant="top" src={posterCard} />
               <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>
