@@ -31,7 +31,7 @@ function Cards() {
       <Row xs={1} md={3} className="g-5">
         {Array.from({ length: 6 }).map((_, idx) => (
           <Col key={idx}>
-            <Card style={{ width: '30rem' }}>
+            <Card style={{ width: '25rem' }}>
               <Card.Img variant="top" src={uxui} />
               <Card.Body>
                 <Card.Title>Card title</Card.Title>

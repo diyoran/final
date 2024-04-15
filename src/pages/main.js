@@ -6,6 +6,7 @@ import video from '../img/icons/video.svg'
 import people from '../img/icons/people.svg'
 import flag from '../img/icons/flag.svg'
 import art from '../img/artCard.jpg'
+import posterBlog from '../img/poster.jpg'
 import mentorImg from '../img/mentor_img.png'
 import CarouselFadeExample from '../components/carousel'
 import Cards from '../components/card'
@@ -51,6 +52,10 @@ export default function Main() {
             <div className="categories">
                 <h1>Top Categories</h1>
                 <ul className="categories__cards">
+                    <li className="categories__card">
+                        <img className="categories__img" src={art} alt="error" />
+                        <p className="categories__text">Art & Desing</p>
+                    </li>
                     <li className="categories__card">
                         <img className="categories__img" src={art} alt="error" />
                         <p className="categories__text">Art & Desing</p>
@@ -126,6 +131,55 @@ export default function Main() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris.
                     </p>
                 </div>
+            </div>
+
+            <div className="blog">
+                <h1 className="blog__title">
+                    The Latest Blog
+                </h1>
+
+                <ul className="blog__container">
+                    <li className="blog__container item">
+                        <img className="item__img" src={posterBlog} alt="error" />
+                        <p className="item__time">
+                            3 May 2023
+                        </p>
+                        <h4 className="item__title">
+                            10 graphic design trends to get you inspired in 2021
+                        </h4>
+                        <p className="item__subtitle">
+                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                        </p>
+                        <a href="!#">Read More</a>
+                    </li>
+                    <li className="blog__container item">
+                        <img className="item__img" src={posterBlog} alt="error" />
+                        <p className="item__time">
+                            3 May 2023
+                        </p>
+                        <h4 className="item__title">
+                            10 graphic design trends to get you inspired in 2021
+                        </h4>
+                        <p className="item__subtitle">
+                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                        </p>
+                        <a href="!#">Read More</a>
+                    </li>
+                    <li className="blog__container item">
+                        <img className="item__img" src={posterBlog} alt="error" />
+                        <p className="item__time">
+                            3 May 2023
+                        </p>
+                        <h4 className="item__title">
+                            10 graphic design trends to get you inspired in 2021
+                        </h4>
+                        <p className="item__subtitle">
+                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                        </p>
+                        <a href="!#">Read More</a>
+                    </li>
+                </ul>
+
             </div>
 
 
