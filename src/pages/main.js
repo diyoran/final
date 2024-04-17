@@ -13,7 +13,7 @@ import Cards from '../components/card'
 
 export default function Main() {
     return (
-        <Fragment className='main-wrapper'>
+        <Fragment>
             <div className='banner'>
                 <div className='info'>
                     <h1 className='info__title'>Find the Best Courses and Amazing Mentor</h1>

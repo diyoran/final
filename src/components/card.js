@@ -1,4 +1,3 @@
-import uxui from '../img/uxui.png'
 import posterCard from '../img/posterCard.webp'
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';

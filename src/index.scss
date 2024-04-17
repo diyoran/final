@@ -16,7 +16,16 @@
 
 }
 
+.title{
+  text-align: left;
+    font-size: 50px;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+    padding-bottom: 20px;
+    font-family: "Nanum Myeongjo", serif;
+}
+
 .logo {
+  
   width: 300px;
   size: 100px;
   position: absolute;
@@ -126,6 +135,7 @@ button.singup {
 .info {
   width: 1000px;
   height: 750px;
+  
 
   &__title {
     font-size: 80px;
@@ -186,7 +196,7 @@ button.singup {
 .banner {
   display: flex;
   flex-direction: row;
-  margin: 20px 40px;
+  margin: 0px 40px;
   border-radius: 10px;
   background: url(./img/header.avif);
   background-repeat: no-repeat;
@@ -203,7 +213,7 @@ button.singup {
   color: white;
   width: max;
   height: 400px;
-  margin: 200px 0px 10px;
+  margin: 200px 0px 10px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -296,6 +306,11 @@ button.singup {
     width: 300px;
     height: 400px;
     margin: 20px 0;
+
+    :hover {
+      filter: brightness(70%);
+    }
+
   }
 
   &__img {
@@ -311,19 +326,15 @@ button.singup {
 
   }
 
-  h1 {
-    font-size: 50px;
-    font-family: "Nanum Myeongjo", serif;
-    margin: 40px;
-    text-align: center;
-    font-size: 50px;
-    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
-  }
+  // h1 {
+  //   font-size: 50px;
+  //   font-family: "Nanum Myeongjo", serif;
+  //   margin: 40px;
+  //   text-align: center;
+  //   font-size: 50px;
+  //   text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+  // }
 
-}
-
-.categories__card:hover {
-  filter: brightness(70%);
 }
 
 .counter {
@@ -399,7 +410,7 @@ button.singup {
   margin: 30px 50px 50px;
 
   &__title {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
     padding-bottom: 20px;
@@ -412,6 +423,11 @@ button.singup {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    :hover{
+      filter: brightness(70%);
+    }
+
   }
 }
 
@@ -436,9 +452,23 @@ button.singup {
   a{
     margin: 10px;
   }
+}
 
+.courses__title{
+  width: 1000px;
+  height: auto;
+ position: relative;
+ left: 200px;
+ top: 200px;
+ padding:  0 0 230px;
 
+ h1{
+  font-size: 70px;
+ }
 
- 
+ p{
+  width: 500px;
+  text-justify: newspaper;
+ }
 
 }
