@@ -8,15 +8,15 @@ export default function Courses() {
         <Fragment>
             <div className="courses-wrapper">
                 <div className="courses__title">
-                    <h1 className="title">
+                    <h2 className="title">
                         Programming Courses
-                    </h1>
+                    </h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
                     </p>
                 </div>
                 <div className="blog">
-                    <h1 className="blog__title">
+                    <h1>
                         Most Popular Development Courses
                     </h1>
 
@@ -32,7 +32,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            <a href="!#">Read More</a>
+                            
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -45,7 +45,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            <a href="!#">Read More</a>
+                            
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -58,7 +58,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            <a href="!#">Read More</a>
+                            
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -71,14 +71,14 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            <a href="!#">Read More</a>
+                            
                         </li>
                     </ul>
 
                 </div>
 
                 <div className="categories">
-                    <h1 className="title">Programming Topics</h1>
+                    <h1>Programming Topics</h1>
                     <ul className="categories__cards">
                         <li className="categories__card">
                             <img className="categories__img" src={art} alt="error" />
@@ -108,9 +108,10 @@ export default function Courses() {
                 </div>
 
                 <div className="filter">
-                    <h1 className="title">
+                    <h1 >
                         All Courses
                     </h1>
+
                     
                 </div>
 

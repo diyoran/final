@@ -50,5 +50,13 @@
     color: rgb(68, 239, 62);
   }
 
+  h1{
+    text-align: left;
+    font-size: 50px;
+    margin: 50px;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+    font-family: "Nanum Myeongjo", serif;
+  }
+
 
 

@@ -32,8 +32,8 @@ const App = () => {
         </main> */}
 
 
-        {/* <Main/> */}
-        <Courses/>
+        <Main/>
+        {/* <Courses/> */}
 
         <Footer />
       </div>

@@ -5,6 +5,8 @@ import mentor from '../img/icons/mentor.svg'
 import video from '../img/icons/video.svg'
 import people from '../img/icons/people.svg'
 import flag from '../img/icons/flag.svg'
+import mentor_chek from '../img/icons/person-check.svg'
+import video_play from '../img/icons/play-btn.svg'
 import art from '../img/artCard.jpg'
 import posterBlog from '../img/poster.jpg'
 import mentorImg from '../img/mentor_img.png'
@@ -16,7 +18,7 @@ export default function Main() {
         <Fragment>
             <div className='banner'>
                 <div className='info'>
-                    <h1 className='info__title'>Find the Best Courses and Amazing Mentor</h1>
+                    <h2 className='info__title'>Find the Best Courses and Amazing Mentor</h2>
                     <p className='info__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus </p>
                     <ul>
                         <li className='feature'>
@@ -82,7 +84,7 @@ export default function Main() {
             <div className="counter">
                 <ul className="counter__list">
                     <li className="counter__item">
-                        <img className="counter__img" src={video} alt="error" />
+                        <img className="counter__img" src={video_play} alt="error" />
                         <p className='counter__number'>
                             10.000+
                         </p>
@@ -100,7 +102,7 @@ export default function Main() {
                         </p>
                     </li>
                     <li className="counter__item">
-                        <img className="counter__img" src={mentor} alt="error" />
+                        <img className="counter__img" src={mentor_chek} alt="error" />
                         <p className='counter__number'>
                             1000+
                         </p>
@@ -134,7 +136,7 @@ export default function Main() {
             </div>
 
             <div className="blog">
-                <h1 className="blog__title">
+                <h1>
                     The Latest Blog
                 </h1>
 
@@ -150,7 +152,7 @@ export default function Main() {
                         <p className="item__subtitle">
                         Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                         </p>
-                        <a href="!#">Read More</a>
+                        
                     </li>
                     <li className="blog__container item">
                         <img className="item__img" src={posterBlog} alt="error" />
@@ -163,7 +165,7 @@ export default function Main() {
                         <p className="item__subtitle">
                         Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                         </p>
-                        <a href="!#">Read More</a>
+                        
                     </li>
                     <li className="blog__container item">
                         <img className="item__img" src={posterBlog} alt="error" />
@@ -176,7 +178,7 @@ export default function Main() {
                         <p className="item__subtitle">
                         Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                         </p>
-                        <a href="!#">Read More</a>
+                        
                     </li>
                 </ul>
 
