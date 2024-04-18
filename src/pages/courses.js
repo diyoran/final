@@ -32,7 +32,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            
+
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -45,7 +45,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            
+
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -58,7 +58,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            
+
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
@@ -71,7 +71,7 @@ export default function Courses() {
                             <p className="item__subtitle">
                                 Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
                             </p>
-                            
+
                         </li>
                     </ul>
 
@@ -112,7 +112,34 @@ export default function Courses() {
                         All Courses
                     </h1>
 
-                    
+                    <div className="sidebar">
+                        <ul className="sidebar__item">
+                            <li className="sidebar__info">
+                                <input id="sidebar__box" type="checkbox" />
+                                <label for="sidebar__box">
+                                    ⭐⭐⭐⭐⭐
+                                </label>
+                                <input id="sidebar__box" type="checkbox" />
+                                <label for="sidebar__box">
+                                    ⭐⭐⭐⭐
+                                </label>
+                                <input id="sidebar__box" type="checkbox" />
+                                <label for="sidebar__box">
+                                    ⭐⭐⭐
+                                </label>
+                                <input id="sidebar__box" type="checkbox" />
+                                <label for="sidebar__box">
+                                    ⭐⭐
+                                </label>
+                                <input id="sidebar__box" type="checkbox" />
+                                <label for="sidebar__box">
+                                    ⭐
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </div>
 
             </div>
