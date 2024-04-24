@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../img/Logo.png'
 import profile from '../img/icons/person.svg'
 
 export default function Header() {
@@ -8,7 +7,7 @@ export default function Header() {
 
             <div className='navbar'>
 
-                <img src={Logo} alt="logo" className='logo' />
+                
                 <input type="search" placeholder='Search bar' className='searchbar' />
                 
 
