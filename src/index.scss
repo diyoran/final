@@ -12,7 +12,6 @@
   background-color: rgb(39, 39, 49);
   width: 1920px;
   height: 120px;
-  // margin: 0px 130px;
   position: fixed;
   font-size: 25px;
   font-weight: 400;
@@ -221,13 +220,13 @@ button.singup {
   margin: 200px 0px 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: relative;
   font-size: 20px;
 }
 
 .footer-info {
- 
+
   width: 500px;
   height: 150px;
   display: flex;
@@ -244,7 +243,7 @@ button.singup {
 }
 
 .footer-articles {
-  width: 700px;
+  width: 1000px;
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -254,7 +253,9 @@ button.singup {
 }
 
 .footer-articles li {
+  width: 200px;
   padding-top: 15px;
+  cursor: pointer;
 }
 
 .footer-articles ul h3 {
@@ -294,8 +295,9 @@ button.singup {
   text-align: center;
   font-family: "Nanum Myeongjo", serif;
 
-  h1{
+  h1 {
     margin: 50px;
+
   }
 
   &__cards {
@@ -318,6 +320,8 @@ button.singup {
     :hover {
       filter: brightness(70%);
     }
+
+    cursor: pointer;
 
   }
 
@@ -439,7 +443,9 @@ button.singup {
     margin: 5px;
   }
 
- 
+  cursor: pointer;
+
+
 }
 
 .courses__title {
@@ -448,7 +454,9 @@ button.singup {
   position: relative;
   left: 200px;
   top: 170px;
-  padding: 0 0 230px;
+  margin: 0 0 230px;
+  border: 1px white;
+  border-style: solid none solid none;
 
   .title {
     font-size: 70px;
@@ -461,20 +469,115 @@ button.singup {
 
 }
 
-.filter{
+.filter {
   width: 1500px;
   margin: 100px 160px;
+
 }
 
-.sidebar{
-  width: 500px;
-  display: flex;
-  flex-direction: column;
+.sidebar {
+  width: 450px;
+  display: block;
+  // background-color: aqua;
 
-  &__info{
-    display: flex;
-    flex-direction: column;
-    
+  p {
+    padding-top: 15px;
+    font-size: 20px;
   }
 
+  &__item {
+    width: 300px;
+    border: 1px white;
+    border-style: solid none none none;
+    padding: 20px 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
+
+.sidebar--wrapper {
+  display: flex;
+  flex-direction: row;
+
+  &__items {
+    position: relative;
+    top: -50px;
+    left: 100px;
+    width: 1500px;
+    height: 1900px;
+  }
+
+  &__item {
+    width: 1200px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+// PROFILE START!
+
+
+
+
+.profile {
+  width: max-content;
+  height: 550px;
+  background-color: rgb(176, 6, 255);
+
+  &__bc {
+    width: 1890px;
+    height: 300px;
+    background-color: #3b3945;
+    border-radius: 0 0 450px 450px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__avatar {
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: relative;
+    top: 150px;
+    background-image: url(./img/6bdeb1109ce11a40409626a6f28dc803.jpg);
+    background-position: center;
+    background-size: contain;
+    border: 2px solid black;
+  }
+
+  &__name{
+    text-align: center;
+    margin-top: 120px;
+    color: black;
+    font-size: 22px;
+    
+    h3{
+      font-size: 45px;
+    }
+
+  }
+
+
+
+}
+
+.profile--list{
+  width: 1700px;
+  height: auto;
+  margin: 100px 100px;
 }
