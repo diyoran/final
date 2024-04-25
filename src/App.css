@@ -11,6 +11,8 @@
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    /* background-color: white; */
+    /* color: black; */
   }
   
   img,
@@ -47,7 +49,7 @@
   }
 
   a:hover{
-    color: rgb(68, 239, 62);
+    text-decoration: underline;
   }
 
   h1{

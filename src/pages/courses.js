@@ -16,7 +16,8 @@ export default function Courses() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
                     </p>
                 </div>
-                <div className="blog">
+
+                <div className="blog course-page-blog">
                     <h1>
                         Most Popular Development Courses
                     </h1>
@@ -81,6 +82,10 @@ export default function Courses() {
                 <div className="categories">
                     <h1>Programming Topics</h1>
                     <ul className="categories__cards">
+                        <li className="categories__card">
+                            <img className="categories__img" src={art} alt="error" />
+                            <p className="categories__text">Art & Desing</p>
+                        </li>
                         <li className="categories__card">
                             <img className="categories__img" src={art} alt="error" />
                             <p className="categories__text">Art & Desing</p>
@@ -410,7 +415,7 @@ export default function Courses() {
                                     </p>
 
                                 </li>
-                              
+
                             </ul>
 
                         </div>
