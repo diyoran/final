@@ -40,11 +40,11 @@ export default function Blog() {
                                 <p>
                                     3 May 2021 5 min read
                                 </p>
-                                <p>
+                                <p className="bloging__card__txt">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci, erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit eget placerat eget hendrerit consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum placerat convallis donec malesuada in porttitor.
                                 </p>
 
-                                <button>Read More</button>
+                                <button className="bloging__card__btn">Read More</button>
 
                             </div>
                         </li>
@@ -58,10 +58,58 @@ export default function Blog() {
                                 <p>
                                     3 May 2021 5 min read
                                 </p>
-                                <p>
+                                <p className="bloging__card__txt">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci, erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit eget placerat eget hendrerit consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum placerat convallis donec malesuada in porttitor.
                                 </p>
-                                <a href="!#">Read More</a>
+                                <button className="bloging__card__btn">Read More</button>
+                            </div>
+                        </li>
+                        <li className="bloging__card">
+                            <img className="bloging__card__img" src={Education} alt="error" />
+                            <div className="bloging__card__title">
+                                <a href="!#">
+                                    <h3>How to experience powerful education free of charge
+                                    </h3>
+                                </a>
+                                <p>
+                                    3 May 2021 5 min read
+                                </p>
+                                <p className="bloging__card__txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci, erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit eget placerat eget hendrerit consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum placerat convallis donec malesuada in porttitor.
+                                </p>
+                                <button className="bloging__card__btn">Read More</button>
+                            </div>
+                        </li>
+                        <li className="bloging__card">
+                            <img className="bloging__card__img" src={Education} alt="error" />
+                            <div className="bloging__card__title">
+                                <a href="!#">
+                                    <h3>How to experience powerful education free of charge
+                                    </h3>
+                                </a>
+                                <p>
+                                    3 May 2021 5 min read
+                                </p>
+                                <p className="bloging__card__txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci, erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit eget placerat eget hendrerit consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum placerat convallis donec malesuada in porttitor.
+                                </p>
+                                <button className="bloging__card__btn">Read More</button>
+                            </div>
+                        </li>
+                        <li className="bloging__card">
+                            <img className="bloging__card__img" src={Education} alt="error" />
+                            <div className="bloging__card__title">
+                                <a href="!#">
+                                    <h3>How to experience powerful education free of charge
+                                    </h3>
+                                </a>
+                                <p>
+                                    3 May 2021 5 min read
+                                </p>
+                                <p className="bloging__card__txt">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla urna dolor quis enim, convallis vitae maecenas. Orci, erat enim adipiscing mattis elit nunc, sed facilisis. Enim, dui, diam sit at. Urna, sit sit eget placerat eget hendrerit consequat. Risus, cursus nibh aliquet facilisis laoreet sagittis quis. Aliquam amet, vel aliquam cursus aliquet pellentesque aenean. Sit vestibulum malesuada eget pharetra. Risus consequat bibendum dictum placerat convallis donec malesuada in porttitor.
+                                </p>
+                                <button className="bloging__card__btn">Read More</button>
                             </div>
                         </li>
                     </ul>

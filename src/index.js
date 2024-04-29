@@ -10,6 +10,8 @@ import Main from './pages/main';
 import Courses from './pages/courses';
 import Profile from './pages/profile';
 import Blog from './pages/blog';
+import CoursePage from './pages/coursePage'
+
 
 const router = createBrowserRouter([
   {
@@ -18,19 +20,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/main",
-        element: <Main/>
+        element: <Main />
       },
       {
         path: "/courses",
-        element: <Courses/>
+        element: <Courses />
       },
       {
         path: "/profile",
-        element: <Profile/>
+        element: <Profile />
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />
+      },
+      {
+        path: "/coursePage",
+        element: <CoursePage />
       }
     ]
   }

@@ -646,10 +646,13 @@ button.singup {
     // background-color: aqua;
     margin: 50px;
     padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &__card {
-    width: 1700px;
+    width: 1500px;
     height: 500px;
     background-color: bisque;
     // background-color: white;
@@ -662,13 +665,36 @@ button.singup {
 
   }
 
+  &__card__btn {
+    background: local;
+    border: 2px solid rgb(250, 70, 190);
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
   &__card__img {
     width: 700px;
     border-radius: 20px;
 
   }
 
- 
+  &__card__txt {
+    // background-color: brown;
+    font-size: 17px;
+    font-weight: 500;
+    width: 700px;
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+
 
   &__card__title {
     padding-top: 20px;
@@ -687,7 +713,7 @@ button.singup {
     a {
       color: black;
       text-decoration: none;
-     
+
     }
 
     a:hover {
@@ -696,22 +722,9 @@ button.singup {
     }
 
     p {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
-      width: 800px;
-    }
-
-    button {
-      background: local;
-      border: 2px solid rgb(250, 70, 190);
-
-      border-radius: 10px;
-
-      width: 200px;
-      height: 50px;
-      font-size: 20px;
-      font-weight: 500;
-
+      width: 700px;
     }
 
   }
@@ -721,5 +734,35 @@ button.singup {
 
 
 
+
+}
+
+
+// COURSEPAGE START!!!
+
+.page {
+
+  width: max;
+
+  &__header {
+    position: relative;
+    width: max;
+    height: 800px;
+    margin: 0 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: aqua;
+    background-image: url(./img/5c3120359be5c4f225cd7b817811217041b759ab-1192x668.webp);
+  }
+
+  
+
+  &__title{
+    width: 200px;
+    padding-top: 500px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+  }
 
 }
