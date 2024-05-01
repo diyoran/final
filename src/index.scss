@@ -8,6 +8,8 @@
 // font-family: "Nanum Myeongjo", serif;
 // по умолчанию стили для блоков с информацией
 
+
+
 .navbar {
   background-color: rgb(39, 39, 49);
   width: 1920px;
@@ -747,22 +749,184 @@ button.singup {
   &__header {
     position: relative;
     width: max;
-    height: 800px;
-    margin: 0 50px;
+    height: 750px;
+    // margin: 0 50px;
     background-repeat: no-repeat;
     background-size: cover;
     // background-color: aqua;
-    background-image: url(./img/5c3120359be5c4f225cd7b817811217041b759ab-1192x668.webp);
+    background-image: url(./img/coursePageHeader.png);
+
+    &-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding-left: 100px;
+    }
+
+    button {
+      height: 70px;
+      border-radius: 10px;
+      // width: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      p {
+        font-size: 25px;
+        font-weight: 600;
+        width: 250px;
+        padding-top: 15px;
+      }
+
+      img {
+        width: 50px;
+      }
+
+    }
+
+    &__btn {
+      position: absolute;
+      top: 600px;
+      width: 500px;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+
   }
 
-  
+  &__add {
+    width: 400px;
+    background-color: green;
 
-  &__title{
+
+  }
+
+  &__share {
     width: 200px;
-    padding-top: 500px;
+    background-color: rgb(250, 70, 190);
+  }
+
+
+
+  &__title {
+    width: 800px;
+    height: 150px;
+    top: 200px;
     position: absolute;
-    color: white;
-    font-size: 50px;
+    // color: white;
+    font-size: 60px;
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 400px;
+    font-size: 35px;
+    // color: white;
+  }
+
+  &__rating {
+    position: absolute;
+    top: 380px;
+    font-size: 30px;
+
+  }
+}
+
+.tutor {
+  width: 800;
+  height: 550px;
+  margin: 50px 100px;
+
+
+  h2 {
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+    &-img {
+      width: 700px;
+      height: 450px;
+      border-radius: 10px;
+    }
+
+    &-text {
+      h3 {
+        font-size: 50px;
+        padding-bottom: 50px;
+      }
+
+      p {
+
+        font-size: 20px;
+        width: 550px;
+      }
+    }
+
+  }
+
+}
+
+.course {
+  margin: 20px 100px;
+
+  h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__info {
+    width: 900px;
+    padding-bottom: 50px;
+  }
+
+  &__features {
+    ul {
+      list-style-type: disc;
+      list-style-image: url(./img/icons/check-lg.svg);
+      font-size: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 900px;
+      height: 500px;
+    }
+
+    li {
+      width: 360px;
+      margin-left: 20px;
+    }
+  }
+
+  &__requirement {
+    ul {
+      list-style-type: disc;
+      font-size: 20px;
+    }
+
+    li {
+      padding-top: 10px;
+    }
+  }
+
+  &__accordion{
+    margin: 50px 0;
+    width: 1000px;
   }
 
 }
