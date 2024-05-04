@@ -7,22 +7,22 @@ export default function Header() {
 
             <div className='navbar'>
 
-                
+
                 <input type="search" placeholder='Search bar' className='searchbar' />
-                
+
 
                 <div className='options'>
                     <label htmlFor='#select'>Category</label>
 
                     <select id='select'>
                         <option>
-
+                            1
                         </option>
                         <option>
-
+                            2
                         </option>
                         <option>
-
+                            3
                         </option>
                     </select>
                 </div>
@@ -37,7 +37,14 @@ export default function Header() {
 
                 </div>
 
+
+
             </div>
+
+            <div className="modal">
+
+            </div>
+
         </header>
     )
 }

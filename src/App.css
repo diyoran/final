@@ -53,17 +53,13 @@
   }
 
   h1{
-    text-align: left;
+    width: 100%;
     font-size: 50px;
     margin: 50px;
     text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
     font-family: "Nanum Myeongjo", serif;
   }
-
-  .wrapper{
-    margin-left: 0;
-    margin-right: 0;
-  }
+  
 
 
 

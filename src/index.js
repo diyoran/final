@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
+import './style/adapt.scss';
 import App from './App';
 import {
   RouterProvider,
@@ -11,6 +12,7 @@ import Courses from './pages/courses';
 import Profile from './pages/profile';
 import Blog from './pages/blog';
 import CoursePage from './pages/coursePage'
+
 
 
 const router = createBrowserRouter([

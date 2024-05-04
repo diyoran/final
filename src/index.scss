@@ -1,932 +1,927 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chathura:wght@100;300;400;700;800&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
-
-// width: 1500px;
-// margin: 100px 160px;
-// text-align: center;
-// text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
-// padding-bottom: 20px;
-// font-family: "Nanum Myeongjo", serif;
-// по умолчанию стили для блоков с информацией
-
-
-
-.navbar {
-  background-color: rgb(39, 39, 49);
-  width: 1920px;
-  height: 120px;
-  position: fixed;
-  font-size: 25px;
-  font-weight: 400;
-  display: inline;
-  z-index: 3;
-}
-
-.title {
-  text-align: left;
-  font-size: 50px;
-  text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
-  padding-bottom: 20px;
-  font-family: "Nanum Myeongjo", serif;
-}
-
-.logo {
-
-  width: 300px;
-  size: 100px;
-  position: absolute;
-  top: -90px;
-  left: -40px;
-
-
-}
-
-.searchbar {
-  width: 500px;
-  background: local;
-  border: 2px solid white;
-  height: 50px;
-  color: white;
-  font-size: 22px;
-  font-weight: 300;
-  border-radius: 5px;
-  position: absolute;
-  top: 40px;
-  left: 230px;
-}
-
-.options {
-  position: absolute;
-  top: 50px;
-  left: 800px;
-
-}
-
-#select {
-  background: local;
-}
-
-.mentor {
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: 50px;
-  left: 1000px;
-
-}
-
-
-
-
-
-
-/* BUTTONS START  */
-
-
-
-
-
-
-.buttons button {
-  width: 100px;
-  height: 60px;
-  border-radius: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  background: local;
-  border: 2px solid greenyellow;
-  position: absolute;
-  top: 30px;
-  left: 1350px;
-  display: block;
-
-}
-
-.buttons button:hover {
-  background-color: rgb(73, 61, 77);
-}
-
-button.singup {
-  background: local;
-  border: 2px solid rgb(250, 70, 190);
-  color: white;
-  margin-left: 170px;
-}
-
-#logout-btn {
-  border: 2px solid red;
-  background: local;
-  color: white;
-  margin-left: 170px;
-  display: none;
-}
-
-#logout-btn:hover {
-  background-color: rgb(73, 61, 77);
-
-}
-
-#profile-btn {
-  display: none;
-  border: 2px solid greenyellow;
-  padding-left: 20px;
-}
-
-#profile-btn img {
-  width: 50px;
-
-}
-
-.info {
-  width: 1000px;
-  height: 750px;
-
-
-  &__title {
-    font-size: 80px;
-    width: 600px;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: bold;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
-  }
-
-  &__subtitle {
-    font-size: 30px;
-    width: 640px;
-    font-weight: normal;
-    position: absolute;
-    top: 400px;
-    left: 100px;
-  }
-
-}
-
-.feature {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-}
-
-.feature img {
-  width: 50px;
-}
-
-.feature p {
-  margin-top: 15px;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.info ul {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-  position: absolute;
-  top: 600px;
-  left: 100px;
-}
-
-.carosel {
-  width: 500px;
-  height: 500px;
-  margin: 125px 150px;
-  border-radius: 15px;
-
-}
-
-.banner {
-  display: flex;
-  flex-direction: row;
-  margin: 0px 40px;
-  border-radius: 10px;
-  background: url(./img/header.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: black;
-  width: 1800px;
-  height: 750px;
-  position: relative;
-  top: 180px;
-}
-
-.footer-wrapper {
-  background-color: rgb(39, 39, 49);
-  border: 1px solid white;
-  color: white;
-  width: max;
-  height: 400px;
-  margin: 200px 0px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
-  font-size: 20px;
-}
-
-.footer-info {
-
-  width: 500px;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  margin: 130px 30px;
-
-}
-
-.footer-info a {
-  text-decoration: none;
-  color: white;
-  padding-top: 30px;
-
-}
-
-.footer-articles {
-  width: 1000px;
-  height: 300px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  gap: 80px;
-
-}
-
-.footer-articles li {
-  width: 200px;
-  padding-top: 15px;
-  cursor: pointer;
-}
-
-.footer-articles ul h3 {
-  text-decoration: underline;
-}
-
-.cards {
-  position: relative;
-  width: 1500px;
-  margin: 250px 200px 0;
-
-  h1 {
-    margin: 80px;
-    text-align: center;
-    font-size: 50px;
-  }
-
-}
-
-.card {
-
-  &__buttons {
-    width: 1500px;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0;
-  }
-
-  &__button {
-    width: 200px;
-  }
-}
-
-.categories {
-  width: 1500px;
-  margin: 100px 160px;
-  text-align: center;
-  font-family: "Nanum Myeongjo", serif;
-
-  h1 {
-    margin: 50px;
-
-  }
-
-  &__cards {
-    width: 1500px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 80px;
-    margin: 0 0px;
-    align-items: center;
-
-  }
-
-
-  &__card {
-    width: 300px;
-    height: 400px;
-    margin: 20px 0;
-
-    :hover {
-      filter: brightness(70%);
-    }
-
-    cursor: pointer;
-
-  }
-
-  &__img {
-    width: max;
-    border-radius: 10px;
-    border: 5px solid rgb(255, 255, 255);
-  }
-
-  &__text {
-    font-size: 40px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-
-  }
-
-}
-
-.counter {
-  color: rgb(255, 255, 255);
-  width: 1800px;
-  margin: 150px 0 0;
-  display: flex;
-  justify-content: center;
-
-
-  &__list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  &__item {
-    align-items: center;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__img {
-
-    width: 60px;
-  }
-
-  &__number {
-    font-size: 30px;
-  }
-
-  &__text {
-    font-size: 15px;
-  }
-
-  p {
-    font-weight: 500;
-  }
-
-}
-
-.table {
-  width: 1400px;
-  margin: 50px 150px;
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-
-  &__img {
-    width: 500px;
-  }
-
-  &__title {
-    font-size: 50px;
-    padding-bottom: 20px;
-  }
-
-  &__text {
+  @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Anybody:ital,wght@0,100..900;1,100..900&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chathura:wght@100;300;400;700;800&family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Ojuju:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap');
+
+  // width: 1500px;
+  // margin: 100px 160px;
+  // text-align: center;
+  // text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+  // padding-bottom: 20px;
+  // font-family: "Nanum Myeongjo", serif;
+  // по умолчанию стили для блоков с информацией
+
+
+
+  .navbar {
+    background-color: rgb(39, 39, 49);
+    width: 100%;
+    height: 120px;
+    position: fixed;
     font-size: 25px;
-    text-justify: newspaper;
+    font-weight: 400;
+    display: inline;
+    z-index: 3;
   }
-
-}
-
-.blog {
-  width: 1500px;
-  height: auto;
-  position: relative;
-  left: 150px;
-  margin: 30px 50px 50px;
-
-  &__container {
-    width: 1440px;
-    margin: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-    :hover {
-      filter: brightness(70%);
-    }
-
-  }
-}
-
-.item {
-  width: 300px;
-  height: 400px;
-  border-radius: 15px;
-  background-color: bisque;
-
-
-  &__img {
-    width: 300px;
-    border-radius: 15px 15px 0 0;
-  }
-
-  h4,
-  p {
-    color: black;
-    font-weight: 500;
-    margin: 5px;
-  }
-
-  cursor: pointer;
-
-
-}
-
-.courses__title {
-  width: 1000px;
-  height: auto;
-  position: relative;
-  left: 200px;
-  top: 170px;
-  margin: 0 0 230px;
-  border: 1px white;
-  border-style: solid none solid none;
 
   .title {
-    font-size: 70px;
+    text-align: left;
+    font-size: 50px;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+    padding-bottom: 20px;
+    font-family: "Nanum Myeongjo", serif;
   }
 
-  p {
-    width: 500px;
-    text-justify: newspaper;
-  }
 
-}
-
-.filter {
-  width: 1500px;
-  margin: 100px 160px;
-
-}
-
-.sidebar {
-  width: 450px;
-  display: block;
-  // background-color: aqua;
-
-  p {
-    padding-top: 15px;
-    font-size: 20px;
-  }
-
-  &__item {
-    width: 300px;
-    border: 1px white;
-    border-style: solid none none none;
-    padding: 20px 0;
-  }
-
-  &__info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-
-}
-
-.sidebar--wrapper {
-  display: flex;
-  flex-direction: row;
-
-  &__items {
-    position: relative;
-    top: -50px;
-    left: 100px;
-    width: 1500px;
-    height: 1900px;
-  }
-
-  &__item {
-    width: 1200px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-// PROFILE START!
-
-
-
-
-.profile {
-  width: max-content;
-  height: 550px;
-  background-color: rgb(176, 6, 255);
-
-  &__bc {
-    width: 1890px;
-    height: 300px;
-    background-color: #3b3945;
-    border-radius: 0 0 450px 450px;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__avatar {
-    background-color: black;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    position: relative;
-    top: 150px;
-    background-image: url(./img/6bdeb1109ce11a40409626a6f28dc803.jpg);
-    background-position: center;
-    background-size: contain;
-    border: 2px solid black;
-  }
-
-  &__name {
-    text-align: center;
-    margin-top: 120px;
-    color: black;
+  .searchbar {
+    width: 25%;
+    background: local;
+    border: 2px solid white;
+    height: 50px;
+    color: white;
     font-size: 22px;
+    font-weight: 300;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    left: 230px;
+  }
 
-    h3 {
-      font-size: 45px;
-    }
+  .options {
+    position: absolute;
+    top: 50px;
+    left: 800px;
+
+  }
+
+  #select {
+    background: local;
+  }
+
+  .mentor {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 1000px;
 
   }
 
 
 
-}
 
-.profile--list {
-  width: 1700px;
-  height: auto;
-  margin: 100px 100px;
-}
 
-.course-page-blog {
-  position: relative;
-}
+
+  /* BUTTONS START  */
 
 
 
 
 
 
-
-
-
-
-// BLOG START!!! 
-
-
-
-
-// .bloging{
-
-//   &__header{
-//     // background-color: rgb(176, 6, 255);
-//     height: 400px;
-//     width: max;
-//     background-color: rgb(176, 6, 255);
-//   }
-
-//   &__header__title{
-//     width: max;
-//     height: 250px;
-//     background-color: #3b3945;
-//     border-radius: 0 0 450px 450px;
-//     text-align: center;
-
-//     h3{
-//       position: relative;
-//       top: 210px;
-//       font-size: 70px;
-//       font-family: "Nanum Myeongjo", serif;
-//       color: black;
-//     }
-
-//     p{
-//       position: relative;
-//       top: 250px; 
-//       font-size: 20px;
-//       font-weight: 500;
-//       color: black;
-//     }
-
-//   }
-
-// }
-
-.bloging {
-
-  &__cards {
-    width: max;
-    height: auto;
-    // background-color: aqua;
-    margin: 50px;
-    padding: 30px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__card {
-    width: 1500px;
-    height: 500px;
-    background-color: bisque;
-    // background-color: white;
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    margin-bottom: 80px;
-    border: 2px solid;
-    border-radius: 20px;
+  .buttons button {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    background: local;
+    border: 2px solid greenyellow;
+    position: absolute;
+    top: 30px;
+    left: 1350px;
+    display: block;
 
   }
 
-  &__card__btn {
+  .buttons button:hover {
+    background-color: rgb(73, 61, 77);
+  }
+
+  button.singup {
     background: local;
     border: 2px solid rgb(250, 70, 190);
-    border-radius: 10px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 500;
+    color: white;
+    margin-left: 170px;
   }
 
-  &__card__img {
-    width: 700px;
-    border-radius: 20px;
+  #logout-btn {
+    border: 2px solid red;
+    background: local;
+    color: white;
+    margin-left: 170px;
+    display: none;
+  }
+
+  #logout-btn:hover {
+    background-color: rgb(73, 61, 77);
 
   }
 
-  &__card__txt {
-    // background-color: brown;
-    font-size: 17px;
-    font-weight: 500;
-    width: 700px;
-    height: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+  #profile-btn {
+    display: none;
+    border: 2px solid greenyellow;
+    padding-left: 20px;
   }
 
+  #profile-btn img {
+    width: 50px;
+
+  }
+
+  .modal{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    z-index: 3;
+  }
+
+  .info {
+    width: 1000px;
+    height: 750px;
+    margin: 0 50px;
 
 
-  &__card__title {
-    padding-top: 20px;
-    color: black;
-
-
-    h3 {
-      text-transform: capitalize;
-      width: 700px;
-      font-size: 45px;
+    &__title {
+      margin: 60px 0;
+      font-size: 75px;
+      width: 900px;
       font-family: "Nanum Myeongjo", serif;
-      font-weight: 800;
-      margin-bottom: 30px;
+      font-weight: bold;
+      text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
     }
 
-    a {
-      color: black;
-      text-decoration: none;
-
+    &__subtitle {
+      font-size: 30px;
+      width: 640px;
+      font-weight: normal;
     }
 
-    a:hover {
-      text-decoration: underline;
-      color: black;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: end;
+      padding-top: 50px;
+    }
+
+  }
+
+  .feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      width: 50px;
     }
 
     p {
-      font-size: 16px;
-      font-weight: 400;
-      width: 700px;
+      margin-top: 15px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+  }
+
+  .carosel {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: 125px 150px;
+    border-radius: 15px;
+
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 60px;
+    border-radius: 10px;
+    background: url(./img/header.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    // width: 1800px;
+    height: 750px;
+    position: relative;
+    top: 180px;
+  }
+
+  .footer-wrapper {
+    background-color: rgb(39, 39, 49);
+    border: 1px solid white;
+    color: white;
+    width: max;
+    height: 400px;
+    margin: 200px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    font-size: 20px;
+  }
+
+  .footer-info {
+
+    width: 500px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 130px 30px;
+
+  }
+
+  .footer-info a {
+    text-decoration: none;
+    color: white;
+    padding-top: 30px;
+
+  }
+
+  .footer-articles {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 80px;
+
+  }
+
+  .footer-articles li {
+    width: 200px;
+    padding-top: 15px;
+    cursor: pointer;
+  }
+
+  .footer-articles ul h3 {
+    text-decoration: underline;
+  }
+
+  .cards {
+    width: 1500px;
+    margin: 250px 150px 0;
+
+    h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 50px;
     }
 
   }
 
+  // .card {
 
+  //   &__buttons {
+  //     width: 1500px;
+  //     display: flex;
+  //     justify-content: space-evenly;
+  //     margin: 250px 0;
+  //   }
 
+  //   &__button {
+  //     width: 200px;
+  //   }
+  // }
 
+  .categories {
+    width: 1500px;
+    margin: 100px 160px;
+    text-align: center;
+    font-family: "Nanum Myeongjo", serif;
 
+    h1 {
+      margin: 50px;
 
-
-}
-
-
-// COURSEPAGE START!!!
-
-.page {
-
-  width: max;
-
-  &__header {
-    position: relative;
-    width: max;
-    height: 750px;
-    // margin: 0 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-color: aqua;
-    background-image: url(./img/coursePageHeader.png);
-
-    &-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.8);
-      padding-left: 100px;
     }
 
-    button {
-      height: 70px;
+    &__cards {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 80px;
+      margin: 0 0px;
+      align-items: center;
+
+    }
+
+
+    &__card {
+      width: 300px;
+      height: 400px;
+      margin: 20px 0;
+
+      :hover {
+        filter: brightness(70%);
+      }
+
+      cursor: pointer;
+
+    }
+
+    &__img {
+      width: max;
       border-radius: 10px;
-      // width: 200px;
+      border: 5px solid rgb(255, 255, 255);
+    }
+
+    &__text {
+      font-size: 40px;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+
+    }
+
+  }
+
+  .counter {
+    color: rgb(255, 255, 255);
+    width: 1800px;
+    margin: 150px 0 0;
+    display: flex;
+    justify-content: center;
+
+
+    &__list {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px;
-
-      p {
-        font-size: 25px;
-        font-weight: 600;
-        width: 250px;
-        padding-top: 15px;
-      }
-
-      img {
-        width: 50px;
-      }
-
+      justify-content: space-evenly;
     }
 
-    &__btn {
-      position: absolute;
-      top: 600px;
-      width: 500px;
-      height: 100px;
+    &__item {
+      align-items: center;
+      width: 300px;
       display: flex;
-      flex-direction: row;
-      gap: 50px;
+      flex-direction: column;
+    }
+
+    &__img {
+
+      width: 60px;
+    }
+
+    &__number {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+
+    p {
+      font-weight: 500;
     }
 
   }
 
-  &__add {
-    width: 400px;
-    background-color: green;
-
-
-  }
-
-  &__share {
-    width: 200px;
-    background-color: rgb(250, 70, 190);
-  }
-
-
-
-  &__title {
-    width: 800px;
-    height: 150px;
-    top: 200px;
-    position: absolute;
-    // color: white;
-    font-size: 60px;
-  }
-
-  &__subtitle {
-    position: absolute;
-    top: 400px;
-    font-size: 35px;
-    // color: white;
-  }
-
-  &__rating {
-    position: absolute;
-    top: 380px;
-    font-size: 30px;
-
-  }
-}
-
-.tutor {
-  width: 800;
-  height: 550px;
-  margin: 50px 100px;
-
-
-  h2 {
-    font-size: 60px;
-    padding-bottom: 20px;
-  }
-
-  &__info {
+  .table {
+    width: 1400px;
+    margin: 50px 150px;
     display: flex;
     flex-direction: row;
     gap: 50px;
 
-    &-img {
-      width: 700px;
-      height: 450px;
-      border-radius: 10px;
+    &__img {
+      width: 500px;
     }
 
-    &-text {
+    &__title {
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 25px;
+      text-justify: newspaper;
+    }
+
+  }
+
+  .blog {
+    width: 1500px;
+    height: auto;
+    // position: relative;
+    // left: 150px;
+    // margin: 30px 50px 50px;
+
+    &__container {
+      width: auto;
+      margin: 25px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+
+      :hover {
+        filter: brightness(70%);
+      }
+
+    }
+  }
+
+  .item {
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    background-color: bisque;
+
+
+    &__img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    h4,
+    p {
+      color: black;
+      font-weight: 500;
+      margin: 5px;
+    }
+
+    cursor: pointer;
+
+
+  }
+
+  .courses__title {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    left: 200px;
+    top: 170px;
+    margin: 0 0 230px;
+    border: 1px white;
+    border-style: solid none solid none;
+
+    .title {
+      font-size: 70px;
+    }
+
+    p {
+      width: 500px;
+      text-justify: newspaper;
+    }
+
+  }
+
+  .filter {
+    width: 1500px;
+    margin: 100px 160px;
+
+  }
+
+  .sidebar {
+    width: 450px;
+    display: block;
+    // background-color: aqua;
+
+    p {
+      padding-top: 15px;
+      font-size: 20px;
+    }
+
+    &__item {
+      width: 300px;
+      border: 1px white;
+      border-style: solid none none none;
+      padding: 20px 0;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+  }
+
+  .sidebar--wrapper {
+    display: flex;
+    flex-direction: row;
+
+    &__items {
+      position: relative;
+      top: -50px;
+      left: 100px;
+      width: 1500px;
+      height: 1900px;
+    }
+
+    &__item {
+      width: 1200px;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+  // PROFILE START!
+
+
+
+
+  .profile {
+    width: max-content;
+    height: 550px;
+    background-color: rgb(176, 6, 255);
+
+    &__bc {
+      width: 1890px;
+      height: 300px;
+      background-color: #3b3945;
+      border-radius: 0 0 450px 450px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__avatar {
+      background-color: black;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: relative;
+      top: 150px;
+      background-image: url(./img/6bdeb1109ce11a40409626a6f28dc803.jpg);
+      background-position: center;
+      background-size: contain;
+      border: 2px solid black;
+    }
+
+    &__name {
+      text-align: center;
+      margin-top: 120px;
+      color: black;
+      font-size: 22px;
+
       h3 {
-        font-size: 50px;
-        padding-bottom: 50px;
+        font-size: 45px;
+      }
+
+    }
+
+
+
+  }
+
+  .profile--list {
+    width: 1700px;
+    height: auto;
+    margin: 100px 100px;
+  }
+
+  .course-page-blog {
+    position: relative;
+  }
+
+
+
+
+
+
+
+
+
+
+  // BLOG START!!! 
+
+
+
+
+  // .bloging{
+
+  //   &__header{
+  //     // background-color: rgb(176, 6, 255);
+  //     height: 400px;
+  //     width: max;
+  //     background-color: rgb(176, 6, 255);
+  //   }
+
+  //   &__header__title{
+  //     width: max;
+  //     height: 250px;
+  //     background-color: #3b3945;
+  //     border-radius: 0 0 450px 450px;
+  //     text-align: center;
+
+  //     h3{
+  //       position: relative;
+  //       top: 210px;
+  //       font-size: 70px;
+  //       font-family: "Nanum Myeongjo", serif;
+  //       color: black;
+  //     }
+
+  //     p{
+  //       position: relative;
+  //       top: 250px; 
+  //       font-size: 20px;
+  //       font-weight: 500;
+  //       color: black;
+  //     }
+
+  //   }
+
+  // }
+
+  .bloging {
+
+    &__cards {
+      width: max;
+      height: auto;
+      // background-color: aqua;
+      margin: 50px;
+      padding: 30px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__card {
+      width: 1500px;
+      height: 500px;
+      background-color: bisque;
+      // background-color: white;
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+      margin-bottom: 80px;
+      border: 2px solid;
+      border-radius: 20px;
+
+    }
+
+    &__card__btn {
+      background: local;
+      border: 2px solid rgb(250, 70, 190);
+      border-radius: 10px;
+      width: 200px;
+      height: 50px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__card__img {
+      width: 700px;
+      border-radius: 20px;
+
+    }
+
+    &__card__txt {
+      // background-color: brown;
+      font-size: 17px;
+      font-weight: 500;
+      width: 700px;
+      height: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+
+
+    &__card__title {
+      padding-top: 20px;
+      color: black;
+
+
+      h3 {
+        text-transform: capitalize;
+        width: 700px;
+        font-size: 45px;
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 800;
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: black;
       }
 
       p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 700px;
+      }
 
+    }
+
+
+
+
+
+
+
+  }
+
+
+  // COURSEPAGE START!!!
+
+  .page {
+
+    width: max;
+
+    &__header {
+      position: relative;
+      width: max;
+      height: 750px;
+      // margin: 0 50px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      // background-color: aqua;
+      background-image: url(./img/coursePageHeader.png);
+
+      &-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        padding-left: 100px;
+      }
+
+      button {
+        height: 70px;
+        border-radius: 10px;
+        // width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        p {
+          font-size: 25px;
+          font-weight: 600;
+          width: 250px;
+          padding-top: 15px;
+        }
+
+        img {
+          width: 50px;
+        }
+
+      }
+
+      &__btn {
+        position: absolute;
+        top: 600px;
+        width: 500px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+
+    }
+
+    &__add {
+      width: 300px;
+      background-color: rgba(13, 205, 13, 0.468);
+
+
+    }
+
+    &__share {
+      width: 150px;
+      background-color: rgba(70, 154, 250, 0.541);
+    }
+
+
+
+    &__title {
+      width: 800px;
+      height: 150px;
+      top: 200px;
+      position: absolute;
+      // color: white;
+      font-size: 60px;
+    }
+
+    &__subtitle {
+      position: absolute;
+      top: 400px;
+      font-size: 35px;
+      // color: white;
+    }
+
+    &__rating {
+      position: absolute;
+      top: 380px;
+      font-size: 30px;
+
+    }
+  }
+
+  .tutor {
+    width: 800;
+    height: 550px;
+    margin: 50px 100px;
+
+
+    h2 {
+      font-size: 60px;
+      padding-bottom: 20px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+
+      &-img {
+        width: 700px;
+        height: 450px;
+        border-radius: 10px;
+      }
+
+      &-text {
+        h3 {
+          width: 500px;
+          font-size: 50px;
+          padding-bottom: 50px;
+        }
+
+        p {
+
+          font-size: 20px;
+          width: 550px;
+        }
+      }
+
+    }
+
+  }
+
+  .course {
+    margin: 20px 100px;
+
+    h2 {
+      width: 500px;
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &__info {
+      width: 900px;
+      padding-bottom: 50px;
+    }
+
+    &__features {
+      ul {
+        list-style-type: disc;
+        list-style-image: url(./img/icons/check-lg.svg);
         font-size: 20px;
-        width: 550px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 900px;
+        height: 500px;
+      }
+
+      li {
+        width: 360px;
+        margin-left: 20px;
       }
     }
 
-  }
+    &__requirement {
+      ul {
+        list-style-type: disc;
+        font-size: 20px;
+      }
 
-}
-
-.course {
-  margin: 20px 100px;
-
-  h2 {
-    font-size: 40px;
-    padding-bottom: 30px;
-  }
-
-  p {
-    font-size: 20px;
-    font-weight: 400;
-  }
-
-  &__info {
-    width: 900px;
-    padding-bottom: 50px;
-  }
-
-  &__features {
-    ul {
-      list-style-type: disc;
-      list-style-image: url(./img/icons/check-lg.svg);
-      font-size: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      width: 900px;
-      height: 500px;
+      li {
+        width: 600px;
+        padding-top: 10px;
+      }
     }
 
-    li {
-      width: 360px;
-      margin-left: 20px;
-    }
-  }
-
-  &__requirement {
-    ul {
-      list-style-type: disc;
-      font-size: 20px;
+    &__accordion {
+      margin: 50px 0;
+      width: 1000px;
     }
 
-    li {
-      padding-top: 10px;
-    }
   }
-
-  &__accordion{
-    margin: 50px 0;
-    width: 1000px;
-  }
-
-}

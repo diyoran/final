@@ -144,6 +144,15 @@ export default function CoursePage() {
                         <AllCollapseExample />
                     </div>
 
+                    {/* <div className="course__feedback">
+                        <h2>
+                            Feedback
+                        </h2>
+                        <div>
+
+                        </div>
+                    </div> */}
+
                 </div>
 
             </div>
