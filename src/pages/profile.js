@@ -1,10 +1,26 @@
 import React from 'react'
 import { Fragment } from 'react'
 import posterBlog from '../img/poster.jpg'
-import { Tabs } from 'antd'
-import { FloatButton } from 'antd';
+import { Breadcrumb } from 'antd';
 
 export default function Profile() {
+
+    const BreadCrumb = () => (
+        <Breadcrumb
+            items={[
+                {
+                    title: <a href="/courses">My Courses</a>,
+                },
+                {
+                    title: <a href="/coursePage">Wishlist</a>,
+                },
+                {
+                    title: <a href="/blog">My Certificate</a>,
+                },
+            ]}
+        />
+    )
+
     return (
         <Fragment>
             <div className="profile--wrapper">
@@ -25,8 +41,8 @@ export default function Profile() {
 
                 <div className="profile--list">
 
-                    <div className="profile--list__items">
-                    <Tabs defaultActiveKey="1" />
+                    <div className="profile--list--breadcrumb">
+                        <BreadCrumb/>
                     </div>
 
                     <div className="blog">
@@ -114,8 +130,6 @@ export default function Profile() {
                         </ul>
                     </div>
                 </div>
-
-                <   FloatButton.BackTop />
 
             </div>
         </Fragment>

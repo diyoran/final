@@ -576,6 +576,9 @@
     width: 1700px;
     height: auto;
     margin: 100px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .course-page-blog {
@@ -924,4 +927,10 @@
       width: 1000px;
     }
 
+  }
+
+  .profile--list--breadcrumb{
+    margin-left: 500px;
+    text-align: center;
+    width: 500px;
   }

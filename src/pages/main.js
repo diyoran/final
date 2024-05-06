@@ -15,7 +15,7 @@ import CarouselFadeExample from '../components/carousel'
 export default function Main() {
     return (
         <Fragment>
-            
+
             <div className='banner'>
                 <div className='info'>
                     <h2 className='info__title'>Find the Best Courses and Amazing Mentor</h2>
@@ -45,7 +45,7 @@ export default function Main() {
                 <div className='carosel'>
                     <CarouselFadeExample />
                 </div>
-                
+
             </div>
 
             <div className='cards'>

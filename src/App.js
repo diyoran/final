@@ -13,9 +13,11 @@ const App = () => {
     }
   }, [])
 
+  
+
   return (
     <div className='wrapper'>
-      <Header />
+      <Header/>
 
       <Outlet />
 

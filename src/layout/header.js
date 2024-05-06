@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from '../img/icons/person.svg'
+import BreadCrumb from '../components/BreadCrumb/breadcrumb'
 
 export default function Header() {
     return (
@@ -7,8 +8,8 @@ export default function Header() {
 
             <div className='navbar'>
 
-
-                <input type="search" placeholder='Search bar' className='searchbar' />
+                <BreadCrumb />
+                {/* <input type="search" placeholder='Search bar' className='searchbar' /> */}
 
 
                 <div className='options'>
@@ -41,9 +42,6 @@ export default function Header() {
 
             </div>
 
-            <div className="modal">
-
-            </div>
 
         </header>
     )
