@@ -25,9 +25,12 @@
     }
 
     .blog {
+        display: flex;
         width: 1000px;
 
         &__container {
+            flex-direction: column;
+            justify-content: center;
             margin: 10px;
         }
     }

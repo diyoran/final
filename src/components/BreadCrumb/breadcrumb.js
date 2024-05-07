@@ -12,7 +12,7 @@ const BreadCrumb = () => (
   <Breadcrumb
     items={[
       {
-        title: 'Home',
+        title: <a href="/main">Home</a>,
       },
       {
         title: <a href="/courses">Courses</a>,
