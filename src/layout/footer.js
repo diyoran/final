@@ -16,22 +16,22 @@ export default function Footer() {
                 <div className='footer-articles'>
                     <ul>
                         <h3>About</h3>
-                        <li>About us</li>
-                        <li>Courses</li>
-                        <li>Mentor</li>
-                        <li>Contact us</li>
+                        <a>About us</a>
+                        <a>Courses</a>
+                        <a>Mentor</a>
+                        <a>Contact us</a>
                     </ul>
                     <ul>
                         <h3>Support</h3>
-                        <li>Careers</li>
-                        <li>Help & Support</li>
-                        <li>Blog</li>
+                        <a>Careers</a>
+                        <a>Help & Support</a>
+                        <a>Blog</a>
                     </ul>
                     <ul>
                         <h3>Company</h3>
-                        <li>Privacy Policy</li>
-                        <li>Terms and Condition</li>
-                        <li>Code of Conduct</li>
+                        <a>Privacy Policy</a>
+                        <a>Terms and Condition</a>
+                        <a>Code of Conduct</a>
 
                     </ul>
                 </div>

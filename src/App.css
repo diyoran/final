@@ -52,6 +52,11 @@
     text-decoration: underline;
   }
 
+  a:visited{
+    color: white;
+    text-decoration: none;
+  }
+
   h1{
     width: 100%;
     font-size: 50px;

@@ -42,9 +42,9 @@ export default function Main() {
                     </ul>
                 </div>
 
-                <div className='carosel'>
+                {/* <div className='carosel'>
                     <CarouselFadeExample />
-                </div>
+                </div> */}
 
             </div>
 
@@ -179,9 +179,9 @@ export default function Main() {
                 </ul>
             </div>
 
-            <div className="table">
-                <img className="table__img" src={mentorImg} alt="" />
-                <div className='table__txt'>
+            <div className="table" id='mentor-link'>
+                <img className="table__img" src={mentorImg} alt="error" />
+                <div>
                     <h1 className="table__title">
                         Become a Mentor
                     </h1>

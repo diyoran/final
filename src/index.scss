@@ -17,90 +17,42 @@
     position: fixed;
     font-size: 25px;
     font-weight: 400;
-    display: inline;
+    display: flex;
+    align-items: center;
     z-index: 3;
-  }
+    justify-content: space-between;
+    gap: 600px;
 
-  .title {
-    text-align: left;
-    font-size: 50px;
-    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
-    padding-bottom: 20px;
-    font-family: "Nanum Myeongjo", serif;
-  }
+    &__input{
+      padding-left: 200px;
+    }
 
-
-  .searchbar {
-    width: 25%;
-    background: local;
-    border: 2px solid white;
-    height: 50px;
-    color: white;
-    font-size: 22px;
-    font-weight: 300;
-    border-radius: 5px;
-    position: absolute;
-    top: 40px;
-    left: 230px;
-  }
-
-  .options {
-    position: absolute;
-    top: 50px;
-    left: 800px;
-
-  }
-
-  #select {
-    background: local;
+  
+    &__left {
+      align-items: center;
+      width: 80%;
+      // justify-content: end;
+      display: flex;
+      flex-direction: row;
+      gap: 70px;
+    }
   }
 
   .mentor {
     text-decoration: none;
     color: white;
-    position: absolute;
-    top: 50px;
-    left: 1000px;
-
   }
-
-
-
-
-
 
   /* BUTTONS START  */
 
 
-
-
-
-
-  .buttons button {
-    width: 100px;
-    height: 60px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    background: local;
-    border: 2px solid greenyellow;
-    position: absolute;
-    top: 30px;
-    left: 1350px;
+  .login {
+    color: greenyellow;
     display: block;
-
   }
 
   .buttons button:hover {
     background-color: rgb(73, 61, 77);
-  }
-
-  button.singup {
-    background: local;
-    border: 2px solid rgb(250, 70, 190);
-    color: white;
-    margin-left: 170px;
   }
 
   #logout-btn {
@@ -120,14 +72,14 @@
     display: none;
     border: 2px solid greenyellow;
     padding-left: 20px;
+
+    img {
+      width: 50px;
+
+    }
   }
 
-  #profile-btn img {
-    width: 50px;
-
-  }
-
-  .modal{
+  .modal {
     width: 500px;
     height: 500px;
     background-color: aqua;
@@ -156,9 +108,10 @@
     }
 
     ul {
+      width: 900px;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: end;
       padding-top: 50px;
     }
@@ -192,6 +145,7 @@
   }
 
   .banner {
+    width: 1750px;
     display: flex;
     flex-direction: row;
     margin: 0px 60px;
@@ -201,7 +155,7 @@
     background-size: cover;
     color: black;
     // width: 1800px;
-    height: 750px;
+    height: 650px;
     position: relative;
     top: 180px;
   }
@@ -238,23 +192,24 @@
   }
 
   .footer-articles {
-    width: 1000px;
+    width: 800px;
     height: 300px;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    gap: 80px;
+    gap: 30px;
 
   }
 
-  .footer-articles li {
+  .footer-articles a {
     width: 200px;
     padding-top: 15px;
-    cursor: pointer;
+    flex-direction: column;
   }
 
   .footer-articles ul h3 {
     text-decoration: underline;
+    width: 300px;
   }
 
   .cards {
@@ -337,7 +292,7 @@
   .counter {
     color: rgb(255, 255, 255);
     width: 1800px;
-    margin: 150px 0 0;
+    margin: 150px 0 150px;
     display: flex;
     justify-content: center;
 
@@ -376,6 +331,7 @@
   }
 
   .table {
+    height: 500px;
     width: 1400px;
     margin: 50px 150px;
     display: flex;
@@ -384,11 +340,11 @@
 
     &__img {
       width: 500px;
+      height: 400px;
     }
 
     &__title {
       font-size: 50px;
-      padding-bottom: 20px;
     }
 
     &__text {
@@ -456,6 +412,7 @@
 
     .title {
       font-size: 70px;
+      font-family: "Nanum Myeongjo", serif;
     }
 
     p {
@@ -928,12 +885,12 @@
 
   }
 
-  .profile--list--breadcrumb{
+  .profile--list--breadcrumb {
     margin-left: 500px;
     text-align: center;
     width: 500px;
   }
 
-  .course-page-blog{
+  .course-page-blog {
     margin-left: 200px;
   }
