@@ -7,7 +7,10 @@ export default function Footer() {
             <div className='footer-wrapper'>
 
                 <div className='footer-info'>
-                    
+                    <h2 className="logo">
+                        LearnHub
+                    </h2>
+
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultrices. Imperdiet mus urna egestas at tellus. </p>
                     <a href="!#">Privacy Policy</a>
                     <a href="!#">Terms and Condition</a>

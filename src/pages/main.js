@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
-import mentor from '../img/icons/mentor.svg'
+import profile from '../img/icons/person.svg'
 import video from '../img/icons/video.svg'
 import people from '../img/icons/people.svg'
 import flag from '../img/icons/flag.svg'
@@ -28,7 +28,7 @@ export default function Main() {
                             </p>
                         </li>
                         <li className='feature'>
-                            <img src={mentor} alt="icon" />
+                            <img src={profile} alt="icon" />
                             <p>
                                 Expert Mentor
                             </p>

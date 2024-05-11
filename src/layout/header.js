@@ -1,6 +1,6 @@
 import React from 'react'
-import profile from '../img/icons/person.svg'
-import BreadCrumb from '../components/BreadCrumb/breadcrumb'
+import mentor from '../img/icons/mentor.svg'
+// import BreadCrumb from '../components/BreadCrumb/breadcrumb'
 import { Fragment, useState } from "react";
 import { Modal } from "antd";
 import { Input, Space } from 'antd';
@@ -36,6 +36,10 @@ export default function Header() {
 
                 <div className='navbar'>
 
+                    <h2 className="logo">
+                        LearnHub
+                    </h2>
+
                     {/* <BreadCrumb /> */}
                     <div className="navbar__input">
                         <Searchbar />
@@ -45,8 +49,8 @@ export default function Header() {
                         <a href="/courses">Courses</a>
                         <a href="/main#mentor-link" className='mentor'>Become a Mentor</a>
                         <a className='login' onClick={handleClickModal}>Login</a>
-                        <a className='logout' id='logout-btn'>Logout</a>
-                        <button id='profile-btn'><img src={profile} alt="profile" /></button>
+                        <a href='!#' className='logout' id='logout-btn'>Logout</a>
+                        <a id='profile-btn'><img src={mentor} alt="profile" /></a>
                     </div>
 
 
