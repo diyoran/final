@@ -10,9 +10,41 @@ import video_play from '../img/icons/play-btn.svg'
 import art from '../img/artCard.jpg'
 import posterBlog from '../img/poster.jpg'
 import mentorImg from '../img/mentor_img.png'
-import CarouselFadeExample from '../components/carousel'
+import { Carousel } from 'antd';
 
 export default function Main() {
+
+
+    const CarouselPlay = () => (
+        <Carousel autoplay>
+            <div>
+                <li className="categories__card">
+                    <img className="categories__img" src={art} alt="error" />
+                    <p className="categories__text">Art & Desing</p>
+                </li>
+            </div>
+            <div>
+                <li className="categories__card">
+                    <img className="categories__img" src={art} alt="error" />
+                    <p className="categories__text">Art & Desing</p>
+                </li>
+            </div>
+            <div>
+                <li className="categories__card">
+                    <img className="categories__img" src={art} alt="error" />
+                    <p className="categories__text">Art & Desing</p>
+                </li>
+            </div>
+            <div>
+                <li className="categories__card">
+                    <img className="categories__img" src={art} alt="error" />
+                    <p className="categories__text">Art & Desing</p>
+                </li>
+            </div>
+
+        </Carousel>
+    )
+
     return (
         <Fragment>
 
@@ -42,9 +74,9 @@ export default function Main() {
                     </ul>
                 </div>
 
-                {/* <div className='carosel'>
-                    <CarouselFadeExample />
-                </div> */}
+                <div className='carosel'>
+                    <CarouselPlay />
+                </div>
 
             </div>
 
