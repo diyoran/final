@@ -11,7 +11,8 @@
 
 
   .navbar {
-    background-color: rgb(39, 39, 49);
+    // background-color: rgb(39, 39, 49);
+    background-color: rgb(30, 30, 35);
     width: 100%;
     height: 120px;
     position: fixed;
@@ -21,11 +22,6 @@
     align-items: center;
     z-index: 3;
     gap: 200px;
-    padding-left: 100px;
-
-    &__input {
-      padding-left: 100px;
-    }
 
 
     &__left {
@@ -141,7 +137,7 @@
     width: 1750px;
     display: flex;
     flex-direction: row;
-    margin: 0px 60px;
+    // margin: 0px 60px;
     border-radius: 10px;
     background: url(./img/header.avif);
     background-repeat: no-repeat;
@@ -154,8 +150,7 @@
   }
 
   .footer-wrapper {
-    background-color: rgb(39, 39, 49);
-    border: 1px solid white;
+    background-color: rgb(30, 30, 35);
     color: white;
     width: max;
     height: 400px;
@@ -208,7 +203,7 @@
 
   .cards {
     width: 1500px;
-    margin: 250px 150px 0;
+    margin: 250px 0;
 
     h1 {
       width: 100%;
@@ -233,15 +228,16 @@
   // }
 
   .categories {
-    width: 1500px;
-    margin: 100px 160px;
+    // width: 1500px;
+    // margin: 100px 160px;
+    // padding: 100px 0;
     text-align: center;
     font-family: "Nanum Myeongjo", serif;
 
-    h1 {
-      margin: 50px;
-
-    }
+    // h1 {
+    //   // padding: 50px 0;
+      
+    // }
 
     &__cards {
       width: 100%;
@@ -286,7 +282,7 @@
   .counter {
     color: rgb(255, 255, 255);
     width: 1800px;
-    margin: 150px 0 150px;
+    margin: 150px 0;
     display: flex;
     justify-content: center;
 
@@ -327,7 +323,7 @@
   .table {
     height: 500px;
     width: 1400px;
-    margin: 50px 150px;
+    margin: 50px 0;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -349,8 +345,9 @@
   }
 
   .blog {
-    width: 1500px;
-    height: auto;
+    // width: 1500px;
+    // height: auto;
+
     // position: relative;
     // left: 150px;
     // margin: 30px 50px 50px;
@@ -398,14 +395,17 @@
     width: 1000px;
     height: auto;
     position: relative;
-    left: 200px;
+    // left: 200px;
     top: 170px;
     margin: 0 0 230px;
     border: 1px white;
-    border-style: solid none solid none;
+    border-style: none none solid none;
+    padding: 20px 0 20px;
+
 
     .title {
       font-size: 70px;
+      padding-bottom: 20px;
       font-family: "Nanum Myeongjo", serif;
     }
 
@@ -418,7 +418,7 @@
 
   .filter {
     width: 1500px;
-    margin: 100px 160px;
+    // margin: 100px 160px;
 
   }
 
@@ -528,7 +528,8 @@
     height: auto;
     margin: 100px 100px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -655,18 +656,17 @@
         font-family: "Nanum Myeongjo", serif;
         font-weight: 800;
         margin-bottom: 30px;
+        color: black;
       }
 
       a {
-        color: black;
+        // color: black;
         text-decoration: none;
 
-      }
-
-      a:hover {
-        text-decoration: underline;
-        color: black;
-      }
+        :hover {
+          text-decoration: underline;
+          color: black;
+        }}
 
       p {
         font-size: 16px;
@@ -697,7 +697,7 @@
       height: 750px;
       // margin: 0 50px;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       // background-color: aqua;
       background-image: url(./img/coursePageHeader.png);
 
@@ -885,6 +885,6 @@
     width: 500px;
   }
 
-  .course-page-blog {
-    margin-left: 200px;
-  }
+  // .course-page-blog {
+  //   margin-left: 200px;
+  // }

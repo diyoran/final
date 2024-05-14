@@ -33,31 +33,31 @@ export default function Header() {
             </Modal>
 
             <header>
+                <div className="container">
+                    <div className='navbar'>
 
-                <div className='navbar'>
+                        <h2 className="logo">
+                            LearnHub
+                        </h2>
 
-                    <h2 className="logo">
-                        LearnHub
-                    </h2>
+                        {/* <BreadCrumb /> */}
+                        <div className="navbar__input">
+                            <Searchbar />
+                        </div>
 
-                    {/* <BreadCrumb /> */}
-                    <div className="navbar__input">
-                        <Searchbar />
+                        <div className="navbar__left">
+                            <a href="/courses">Courses</a>
+                            <a href="/main#mentor-link" className='mentor'>Become a Mentor</a>
+                            <a className='login' onClick={handleClickModal}>Login</a>
+                            <a href='!#' className='logout' id='logout-btn'>Logout</a>
+                            <a id='profile-btn'><img src={mentor} alt="profile" /></a>
+                        </div>
+
+
+
                     </div>
-
-                    <div className="navbar__left">
-                        <a href="/courses">Courses</a>
-                        <a href="/main#mentor-link" className='mentor'>Become a Mentor</a>
-                        <a className='login' onClick={handleClickModal}>Login</a>
-                        <a href='!#' className='logout' id='logout-btn'>Logout</a>
-                        <a id='profile-btn'><img src={mentor} alt="profile" /></a>
-                    </div>
-
-
 
                 </div>
-
-
             </header>
         </Fragment>
     )

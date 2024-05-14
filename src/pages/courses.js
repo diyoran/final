@@ -7,7 +7,7 @@ import art from '../img/artCard.jpg'
 export default function Courses() {
     return (
         <Fragment>
-            <div className="courses-wrapper">
+            <div className="container">
                 <div className="courses__title">
                     <h2 className="title">
                         Programming Courses
@@ -22,83 +22,87 @@ export default function Courses() {
                         Most Popular Development Courses
                     </h1>
 
-                    <ul className="blog__container">
-                        <li className="blog__container item">
-                            <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
-                            </p>
-                            <h4 className="item__title">
-                                10 graphic design trends to get you inspired in 2021
-                            </h4>
-                            <p className="item__subtitle">
-                                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
-                            </p>
+                    <div className="container">
+                        <ul className="blog__container">
+                            <li className="blog__container item">
+                                <img className="item__img" src={posterBlog} alt="error" />
+                                <p className="item__time">
+                                    3 May 2023
+                                </p>
+                                <h4 className="item__title">
+                                    10 graphic design trends to get you inspired in 2021
+                                </h4>
+                                <p className="item__subtitle">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                </p>
 
-                        </li>
-                        <li className="blog__container item">
-                            <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
-                            </p>
-                            <h4 className="item__title">
-                                10 graphic design trends to get you inspired in 2021
-                            </h4>
-                            <p className="item__subtitle">
-                                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
-                            </p>
+                            </li>
+                            <li className="blog__container item">
+                                <img className="item__img" src={posterBlog} alt="error" />
+                                <p className="item__time">
+                                    3 May 2023
+                                </p>
+                                <h4 className="item__title">
+                                    10 graphic design trends to get you inspired in 2021
+                                </h4>
+                                <p className="item__subtitle">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                </p>
 
-                        </li>
-                        <li className="blog__container item">
-                            <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
-                            </p>
-                            <h4 className="item__title">
-                                10 graphic design trends to get you inspired in 2021
-                            </h4>
-                            <p className="item__subtitle">
-                                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
-                            </p>
+                            </li>
+                            <li className="blog__container item">
+                                <img className="item__img" src={posterBlog} alt="error" />
+                                <p className="item__time">
+                                    3 May 2023
+                                </p>
+                                <h4 className="item__title">
+                                    10 graphic design trends to get you inspired in 2021
+                                </h4>
+                                <p className="item__subtitle">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                </p>
 
-                        </li>
-                        <li className="blog__container item">
-                            <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
-                            </p>
-                            <h4 className="item__title">
-                                10 graphic design trends to get you inspired in 2021
-                            </h4>
-                            <p className="item__subtitle">
-                                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
-                            </p>
+                            </li>
+                            <li className="blog__container item">
+                                <img className="item__img" src={posterBlog} alt="error" />
+                                <p className="item__time">
+                                    3 May 2023
+                                </p>
+                                <h4 className="item__title">
+                                    10 graphic design trends to get you inspired in 2021
+                                </h4>
+                                <p className="item__subtitle">
+                                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                </p>
 
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
 
                 <div className="categories">
                     <h1>Programming Topics</h1>
-                    <ul className="categories__cards">
-                        <li className="categories__card">
-                            <img className="categories__img" src={art} alt="error" />
-                            <p className="categories__text">Art & Desing</p>
-                        </li>
-                        <li className="categories__card">
-                            <img className="categories__img" src={art} alt="error" />
-                            <p className="categories__text">Art & Desing</p>
-                        </li>
-                        <li className="categories__card">
-                            <img className="categories__img" src={art} alt="error" />
-                            <p className="categories__text">Art & Desing</p>
-                        </li>
-                        <li className="categories__card">
-                            <img className="categories__img" src={art} alt="error" />
-                            <p className="categories__text">Art & Desing</p>
-                        </li>
-                    </ul>
+                    <div className="container">
+                        <ul className="categories__cards">
+                            <li className="categories__card">
+                                <img className="categories__img" src={art} alt="error" />
+                                <p className="categories__text">Art & Desing</p>
+                            </li>
+                            <li className="categories__card">
+                                <img className="categories__img" src={art} alt="error" />
+                                <p className="categories__text">Art & Desing</p>
+                            </li>
+                            <li className="categories__card">
+                                <img className="categories__img" src={art} alt="error" />
+                                <p className="categories__text">Art & Desing</p>
+                            </li>
+                            <li className="categories__card">
+                                <img className="categories__img" src={art} alt="error" />
+                                <p className="categories__text">Art & Desing</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="filter">
