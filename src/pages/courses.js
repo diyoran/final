@@ -1,5 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
+import { Helmet } from "react-helmet";
 import { Checkbox } from "antd";
 import posterBlog from '../img/poster.jpg'
 import art from '../img/artCard.jpg'
@@ -7,6 +8,13 @@ import art from '../img/artCard.jpg'
 export default function Courses() {
     return (
         <Fragment>
+
+            <Helmet>
+                <title>
+                    LearnHub/Courses
+                </title>
+            </Helmet>
+
             <div className="container">
                 <div className="courses__title">
                     <div className="page__header-content">

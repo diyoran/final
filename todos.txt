@@ -6,4 +6,4 @@
 6. Поправить дизайн 
 7. notification antd 
 8. progress antd 
-9. seo opt.
+9. seo opt. +

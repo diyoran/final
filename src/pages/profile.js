@@ -1,5 +1,6 @@
 import React from 'react'
 import { Fragment } from 'react'
+import { Helmet } from "react-helmet";
 import posterBlog from '../img/poster.jpg'
 import { Breadcrumb } from 'antd';
 
@@ -23,6 +24,13 @@ export default function Profile() {
 
     return (
         <Fragment>
+
+            <Helmet>
+                <title>
+                    LearnHub/Profile
+                </title>
+            </Helmet>
+
             <div className="container">
                 <div className="profile">
                     <div className="profile__bc">

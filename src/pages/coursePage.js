@@ -1,5 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
+import { Helmet } from "react-helmet";
+
 import share from "../img/icons/share.svg"
 import plus from "../img/icons/plus-lg.svg"
 import mentorPhoto from "../img/tutorPhoto.jpg"
@@ -8,6 +10,12 @@ import AllCollapseExample from "../components/Accordion/accordion";
 export default function CoursePage() {
     return (
         <Fragment>
+
+            <Helmet>
+                <title>
+                    {/* LearnHub/{state?.data.title} */}
+                </title>
+            </Helmet>
 
             <div className="container">
 

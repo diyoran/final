@@ -1,10 +1,19 @@
 import React from "react";
 import { Fragment } from "react";
 import Education from "../img/education.avif"
+import { Helmet } from "react-helmet";
+
 
 export default function Blog() {
     return (
         <Fragment>
+
+            <Helmet>
+                <title>
+                    LearnHub/Blog
+                </title>
+            </Helmet>
+
             <div className="container">
 
 
