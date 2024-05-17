@@ -15,7 +15,7 @@ export default function Header() {
     const Searchbar = () => (
         <Space direction="vertical">
             <Search
-                placeholder="What do you like to learn?"
+                placeholder="What would you like to learn?"
                 onSearch={onSearch}
                 style={{
                     width: 400,

@@ -11,7 +11,7 @@ export default function Courses() {
                 <div className="courses__title">
                     <div className="page__header-content">
                         <h2 className="title">
-                            Programming Courses
+                            All Courses
                         </h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
@@ -19,9 +19,9 @@ export default function Courses() {
                     </div>
                 </div>
 
-                <div className="blog course-page-blog">
+                <div className="blog">
                     <h1>
-                        Most Popular Development Courses
+                        Most Popular Courses
                     </h1>
 
                     <div className="container">
@@ -84,7 +84,7 @@ export default function Courses() {
                 </div>
 
                 <div className="categories">
-                    <h1>Programming Topics</h1>
+                    <h1>Topics</h1>
                     <div className="container">
                         <ul className="categories__cards">
                             <li className="categories__card">
@@ -109,7 +109,7 @@ export default function Courses() {
 
                 <div className="filter">
                     <h1 >
-                        All Courses
+                        Filter & Sort
                     </h1>
 
                     <div className="sidebar--wrapper">
@@ -175,21 +175,21 @@ export default function Courses() {
                                 </h2>
                                 <li className="sidebar__info">
                                     <Checkbox />
-                                    <p>Pyton</p>
+                                    <p>Front-end developer</p>
                                 </li>
                                 <li className="sidebar__info">
                                     <Checkbox />
-                                    <p>Java</p>
+                                    <p>Web Designer</p>
 
                                 </li>
                                 <li className="sidebar__info">
                                     <Checkbox />
-                                    <p>Flutter</p>
+                                    <p>Management</p>
 
                                 </li>
                                 <li className="sidebar__info">
                                     <Checkbox />
-                                    <p>CSS</p>
+                                    <p>Copywriter</p>
 
                                 </li>
 
