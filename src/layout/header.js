@@ -11,7 +11,7 @@ export default function Header() {
     const handleClickModal = () => setIsOpenModal(prev => !prev)
 
     const { Search } = Input;
-    const onSearch = (value, _e, info) => console.log(info?.source, value);
+    const onSearch = (value, _e) => console.log(value);
     const Searchbar = () => (
         <Space direction="vertical">
             <Search
@@ -19,6 +19,9 @@ export default function Header() {
                 onSearch={onSearch}
                 style={{
                     width: 400,
+                    inputFontSize: 20,
+                    fontSize: 20,
+
                 }}
             />
 
@@ -26,18 +29,29 @@ export default function Header() {
 
     )
 
+    // const loginBtn = document.getElementsByClassName('ant-btn-primary')
+    // const loginlink = document.getElementById('login-btn')
+    // const login = () => {
+    //     loginlink.style.display = 'none'
+    // }
+
+
     return (
         <Fragment>
-            <Modal open={IsOpenModal} style={{ backgroundColor: "black" }} title={"Create New Account or Login"} onOk={handleClickModal} onCancel={handleClickModal}>
-
+            <Modal open={IsOpenModal} title={"Create New Account or Login"} onOk={handleClickModal} onCancel={handleClickModal}>
+                <div className="modal">
+                    <input className="modal__input" type="text" placeholder='Email' />
+                    <input className="modal__input" type="password" placeholder='Password' />
+                    <a className="modal__link" href="!#">Forgot your password?</a>
+                </div>
             </Modal>
 
             <header>
-                <div className="container">
+                <div className="container-header">
                     <div className='navbar'>
 
                         <h2 className="logo">
-                            LearnHub
+                            <a href="/main">LearnHub</a>
                         </h2>
 
                         {/* <BreadCrumb /> */}
@@ -48,9 +62,9 @@ export default function Header() {
                         <div className="navbar__left">
                             <a href="/courses">Courses</a>
                             <a href="/main#mentor-link" className='mentor'>Become a Mentor</a>
-                            <a className='login' onClick={handleClickModal}>Login</a>
+                            <a id='login-btn' className='login' onClick={handleClickModal}>Login</a>
                             <a href='!#' className='logout' id='logout-btn'>Logout</a>
-                            <a id='profile-btn'><img src={mentor} alt="profile" /></a>
+                            <a href='!#' id='profile-btn'><img src={mentor} alt="profile" /></a>
                         </div>
 
 

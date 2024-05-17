@@ -13,7 +13,7 @@
   .navbar {
     // background-color: rgb(39, 39, 49);
     background-color: rgb(30, 30, 35);
-    // width: 100%;
+    // width: 1600px;
     height: 120px;
     position: fixed;
     font-size: 25px;
@@ -25,9 +25,10 @@
 
 
     &__left {
+      a{
+        text-decoration: none;
+      }
       align-items: center;
-      // width: 80%;
-      // justify-content: end;
       display: flex;
       flex-direction: row;
       gap: 70px;
@@ -36,7 +37,12 @@
   }
 
   .logo {
+    color: white;
     font-family: "Nanum Myeongjo", serif;
+    a{
+      text-decoration: none;
+    }
+    
   }
 
   .mentor {
@@ -69,10 +75,20 @@
   }
 
   .modal {
-    width: 500px;
-    height: 500px;
-    background-color: aqua;
-    z-index: 3;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__input {
+      font-weight: 500;
+      padding-left: 10px;
+      font-size: 20px;
+      width: 400px;
+      height: 50px;
+      // font-family: "Nanum Myeongjo", serif;
+
+    }
   }
 
   .info {
@@ -118,7 +134,6 @@
     }
 
     p {
-      margin-top: 15px;
       font-size: 25px;
       font-weight: 500;
     }
@@ -202,50 +217,24 @@
   }
 
   .cards {
-    // width: 1500px;
-    margin: 250px 0;
+    margin: 300px 0 150px;
 
     h1 {
-      // width: 100%;
       text-align: center;
       font-size: 50px;
     }
 
   }
 
-  // .card {
-
-  //   &__buttons {
-  //     width: 1500px;
-  //     display: flex;
-  //     justify-content: space-evenly;
-  //     margin: 250px 0;
-  //   }
-
-  //   &__button {
-  //     width: 200px;
-  //   }
-  // }
-
   .categories {
-    // width: 1500px;
-    // margin: 100px 160px;
-    // padding: 100px 0;
     text-align: center;
     font-family: "Nanum Myeongjo", serif;
 
-    // h1 {
-    //   // padding: 50px 0;
-
-    // }
-
     &__cards {
-      // width: 100%;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 80px;
-      // margin: 0 0px;
       align-items: center;
 
     }
@@ -281,7 +270,6 @@
 
   .counter {
     color: rgb(255, 255, 255);
-    // width: 1800px;
     margin: 150px 0;
     display: flex;
     justify-content: center;
@@ -392,18 +380,23 @@
   }
 
   .courses__title {
-    width: 1000px;
-    height: auto;
+    height: 500px;
     position: relative;
-    // left: 200px;
     top: 170px;
     margin: 0 0 230px;
-    border: 1px white;
-    border-style: none none solid none;
+    // border: 1px white;
+    // border-style: none none solid none;
     padding: 20px 0 20px;
+    background-image: url(./img/coursesProgramming.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // border-radius: 20px;
+    
 
 
     .title {
+      padding-top: 100px;
       font-size: 70px;
       padding-bottom: 20px;
       font-family: "Nanum Myeongjo", serif;
@@ -708,7 +701,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.7);
         padding-left: 100px;
       }
 
@@ -794,6 +787,7 @@
 
 
     h2 {
+      font-weight: 400;
       font-size: 60px;
       padding-bottom: 20px;
     }
@@ -831,7 +825,7 @@
     // margin: 20px 100px;
 
     h2 {
-      width: 500px;
+      // width: 500px;
       font-size: 40px;
       padding-bottom: 30px;
     }
@@ -842,7 +836,7 @@
     }
 
     &__info {
-      width: 900px;
+      width: 1000px;
       padding-bottom: 50px;
     }
 
@@ -859,7 +853,7 @@
 
       li {
         width: 360px;
-        // margin-left: 20px;
+        margin-left: 30px;
       }
     }
 
@@ -872,11 +866,13 @@
       li {
         width: 600px;
         padding-top: 10px;
+        margin-left: 30px;
+
       }
     }
 
     &__accordion {
-      margin: 50px 0;
+      margin: 50px 20px;
       width: 1000px;
     }
 
@@ -888,6 +884,22 @@
     width: 500px;
   }
 
-  // .course-page-blog {
-  //   margin-left: 200px;
-  // }
+  .notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Nanum Myeongjo", serif;
+    gap: 30px;
+
+    &__img{
+      width: 30%;
+    }
+
+    
+
+  }

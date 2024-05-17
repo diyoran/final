@@ -10,40 +10,40 @@ import video_play from '../img/icons/play-btn.svg'
 import art from '../img/artCard.jpg'
 import posterBlog from '../img/poster.jpg'
 import mentorImg from '../img/mentor_img.png'
-import { Carousel } from 'antd';
+// import { Carousel } from 'antd';
 
 export default function Main() {
 
 
-    const CarouselPlay = () => (
-        <Carousel autoplay>
-            <div >
-                <li className="categories__card">
-                    <img className="categories__img" src={art} alt="error" />
-                    <p className="categories__text">Art & Desing</p>
-                </li>
-            </div>
-            <div>
-                <li className="categories__card">
-                    <img className="categories__img" src={art} alt="error" />
-                    <p className="categories__text">Art & Desing</p>
-                </li>
-            </div>
-            <div>
-                <li className="categories__card">
-                    <img className="categories__img" src={art} alt="error" />
-                    <p className="categories__text">Art & Desing</p>
-                </li>
-            </div>
-            <div>
-                <li className="categories__card">
-                    <img className="categories__img" src={art} alt="error" />
-                    <p className="categories__text">Art & Desing</p>
-                </li>
-            </div>
+    // const CarouselPlay = () => (
+    //     <Carousel autoplay>
+    //         <div >
+    //             <li className="categories__card">
+    //                 <img className="categories__img" src={art} alt="error" />
+    //                 <p className="categories__text">Art & Desing</p>
+    //             </li>
+    //         </div>
+    //         <div>
+    //             <li className="categories__card">
+    //                 <img className="categories__img" src={art} alt="error" />
+    //                 <p className="categories__text">Art & Desing</p>
+    //             </li>
+    //         </div>
+    //         <div>
+    //             <li className="categories__card">
+    //                 <img className="categories__img" src={art} alt="error" />
+    //                 <p className="categories__text">Art & Desing</p>
+    //             </li>
+    //         </div>
+    //         <div>
+    //             <li className="categories__card">
+    //                 <img className="categories__img" src={art} alt="error" />
+    //                 <p className="categories__text">Art & Desing</p>
+    //             </li>
+    //         </div>
 
-        </Carousel>
-    )
+    //     </Carousel>
+    // )
 
     return (
         <Fragment>
@@ -79,7 +79,7 @@ export default function Main() {
                     </div>
 
                     <div className='carosel'>
-                        <CarouselPlay />
+                        {/* <CarouselPlay /> */}
                     </div>
 
                 </div>

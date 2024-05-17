@@ -54,7 +54,7 @@ a:hover {
 }
 
 a:visited {
-  color: white;
+  color: unset;
   text-decoration: none;
 }
 
@@ -68,5 +68,12 @@ h1 {
 .container{
   max-width: 1500px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.container-header{
+  max-width: 1500px;
+  width: 100%;
+  /* padding: 0 100px; */
   margin: 0 auto;
 }

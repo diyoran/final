@@ -1,14 +1,52 @@
 {
-    "products": [
+    "articles": [
         {
             "id": 1,
-            "image": "",
-            "title": "",
-            "description": "",
+            "image": "/assets/img/poster.jpg",
+            "title": "10 graphic design trends to get you inspired in 2021",
+            "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
             "price": 56,
-            "category": ""
-
-
+            "category": "design"
+        },
+        {
+            "id": 1,
+            "image": "/assets/img/posterCard.webp",
+            "title": "How to combine colors correctly?",
+            "description": "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+            "price": 56,
+            "category": "design"
+        },
+        {
+            "id": 1,
+            "image": "/assets/img/poster.jpg",
+            "title": "First steps in programming",
+            "description": " Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+            "price": 56,
+            "category": "programming"
+        },
+        {
+            "id": 1,
+            "image": "/assets/img/poster.jpg",
+            "title": "First steps in programming",
+            "description": " Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+            "price": 56,
+            "category": "programming"
+        },
+        {
+            "id": 1,
+            "image": "/assets/img/poster.jpg",
+            "title": "First steps in programming",
+            "description": " Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+            "price": 56,
+            "category": "programming"
+        },
+        {
+            "id": 1,
+            "image": "/assets/img/poster.jpg",
+            "title": "First steps in programming",
+            "description": " Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.",
+            "price": 56,
+            "category": "programming"
         }
     ]
 }

@@ -9,12 +9,14 @@ export default function Courses() {
         <Fragment>
             <div className="container">
                 <div className="courses__title">
-                    <h2 className="title">
-                        Programming Courses
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
-                    </p>
+                    <div className="page__header-content">
+                        <h2 className="title">
+                            Programming Courses
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus
+                        </p>
+                    </div>
                 </div>
 
                 <div className="blog course-page-blog">

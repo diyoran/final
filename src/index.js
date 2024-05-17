@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import './style/adapt.scss';
 import App from './App';
 import {
   RouterProvider,
@@ -11,6 +10,7 @@ import Main from './pages/main';
 import Courses from './pages/courses';
 import Profile from './pages/profile';
 import Blog from './pages/blog';
+import NotFound from './pages/notFound'
 import CoursePage from './pages/coursePage'
 
 
@@ -39,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/coursePage",
         element: <CoursePage />
+      },
+      {
+        path: "*",
+        element: <NotFound/>
       }
     ]
   }
