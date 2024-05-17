@@ -16,7 +16,7 @@ const App = () => {
   
 
   return (
-    <div className='wrapper'>
+    <div>
       <Header/>
 
       <Outlet />

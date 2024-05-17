@@ -23,7 +23,7 @@ export default function Profile() {
 
     return (
         <Fragment>
-            <div className="profile--wrapper">
+            <div className="container">
                 <div className="profile">
                     <div className="profile__bc">
                         <div className="profile__avatar"></div>
@@ -42,7 +42,7 @@ export default function Profile() {
                 <div className="profile--list">
 
                     <div className="profile--list--breadcrumb">
-                        <BreadCrumb/>
+                        <BreadCrumb />
                     </div>
 
                     <div className="blog">
@@ -132,6 +132,7 @@ export default function Profile() {
                 </div>
 
             </div>
+
         </Fragment>
     )
 }
