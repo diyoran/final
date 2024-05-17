@@ -91,6 +91,11 @@
       // font-family: "Nanum Myeongjo", serif;
 
     }
+
+    &__link{
+      font-size: 16px;
+      font-weight: 400;
+    }
   }
 
   .info {
@@ -156,7 +161,7 @@
     flex-direction: row;
     // margin: 0px 60px;
     border-radius: 10px;
-    background: url(./img/header.avif);
+    background: url(./img/banner-img.gif);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
