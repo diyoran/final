@@ -21,7 +21,14 @@
     display: flex;
     align-items: center;
     z-index: 3;
-    gap: 200px;
+    gap: 180px;
+
+    &__burger {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+    }
 
 
     &__left {
@@ -92,7 +99,7 @@
 
     }
 
-    &__link{
+    &__link {
       font-size: 16px;
       font-weight: 400;
     }
@@ -161,11 +168,10 @@
     flex-direction: row;
     // margin: 0px 60px;
     border-radius: 10px;
-    background: url(./img/banner-img.gif);
+    background: url(./img/header.avif);
     background-repeat: no-repeat;
     background-size: cover;
     color: black;
-    // width: 1800px;
     height: 650px;
     position: relative;
     top: 180px;
@@ -239,7 +245,7 @@
     text-align: center;
     font-family: "Nanum Myeongjo", serif;
 
-    h1{
+    h1 {
       padding-bottom: 50px;
     }
 
@@ -347,7 +353,7 @@
 
   .blog {
 
-    h1{
+    h1 {
       text-align: center;
     }
 
@@ -360,7 +366,7 @@
 
 
       :hover {
-        filter: brightness(70%);
+        filter: brightness(80%);
       }
 
     }
@@ -373,16 +379,26 @@
     background-color: bisque;
 
 
+
     &__img {
       width: 100%;
       border-radius: 15px 15px 0 0;
     }
 
-    h4,
+    h4 {
+      font-size: 22px;
+      font-weight: 700;
+      color: black;
+      padding: 5px;
+
+    }
+
     p {
       color: black;
       font-weight: 500;
-      margin: 5px;
+      // margin: 5px;
+      padding: 5px;
+
     }
 
     cursor: pointer;
@@ -489,40 +505,46 @@
 
 
   .profile {
-    // width: max-content;
-    height: 550px;
-    background-color: rgb(176, 6, 255);
-
-    &__bc {
-      // width: 1890px;
-      height: 300px;
-      background-color: #3b3945;
-      border-radius: 0 0 450px 450px;
-      display: flex;
-      justify-content: center;
-    }
+    padding-bottom: 50px;
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 2px white;
+    border-style: none none solid none;
 
     &__avatar {
       background-color: black;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      position: relative;
-      top: 150px;
+      width: 350px;
+      height: 350px;
+      border-radius: 5%;
       background-image: url(./img/6bdeb1109ce11a40409626a6f28dc803.jpg);
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       border: 2px solid black;
     }
 
+    &__progress {
+      padding-top: 50px;
+      padding-left: 60px;
+    }
+
     &__name {
+      width: 500px;
       text-align: center;
-      margin-top: 120px;
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
       h3 {
         font-size: 45px;
+        font-family: "Nanum Myeongjo", serif;
+
       }
 
     }
@@ -534,7 +556,7 @@
   .profile--list {
     // width: 1700px;
     height: auto;
-    margin: 100px 0;
+    margin: 200px 0;
     display: flex;
     // justify-content: center;
     align-items: center;
@@ -556,43 +578,6 @@
   // BLOG START!!! 
 
 
-
-
-  // .bloging{
-
-  //   &__header{
-  //     // background-color: rgb(176, 6, 255);
-  //     height: 400px;
-  //     width: max;
-  //     background-color: rgb(176, 6, 255);
-  //   }
-
-  //   &__header__title{
-  //     width: max;
-  //     height: 250px;
-  //     background-color: #3b3945;
-  //     border-radius: 0 0 450px 450px;
-  //     text-align: center;
-
-  //     h3{
-  //       position: relative;
-  //       top: 210px;
-  //       font-size: 70px;
-  //       font-family: "Nanum Myeongjo", serif;
-  //       color: black;
-  //     }
-
-  //     p{
-  //       position: relative;
-  //       top: 250px; 
-  //       font-size: 20px;
-  //       font-weight: 500;
-  //       color: black;
-  //     }
-
-  //   }
-
-  // }
 
   .bloging {
 
@@ -893,11 +878,7 @@
 
   }
 
-  .profile--list--breadcrumb {
-    margin-left: 500px;
-    text-align: center;
-    width: 500px;
-  }
+
 
   .notfound {
     display: flex;

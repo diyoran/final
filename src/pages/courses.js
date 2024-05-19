@@ -91,30 +91,6 @@ export default function Courses() {
                     </div>
                 </div>
 
-                <div className="categories">
-                    <h1>Topics</h1>
-                    <div className="container">
-                        <ul className="categories__cards">
-                            <li className="categories__card">
-                                <img className="categories__img" src={art} alt="error" />
-                                <p className="categories__text">Art & Desing</p>
-                            </li>
-                            <li className="categories__card">
-                                <img className="categories__img" src={art} alt="error" />
-                                <p className="categories__text">Art & Desing</p>
-                            </li>
-                            <li className="categories__card">
-                                <img className="categories__img" src={art} alt="error" />
-                                <p className="categories__text">Art & Desing</p>
-                            </li>
-                            <li className="categories__card">
-                                <img className="categories__img" src={art} alt="error" />
-                                <p className="categories__text">Art & Desing</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
                 <div className="filter">
                     <h1 >
                         Filter & Sort
@@ -127,8 +103,9 @@ export default function Courses() {
                                     Ratings
                                 </h2>
                                 <li className="sidebar__info">
-                                    <Checkbox />
-                                    <p>⭐⭐⭐⭐⭐ 5</p>
+                                    <label><Checkbox value="value" /> <p>⭐⭐⭐⭐⭐ 5</p></label>
+                                    {/* <Checkbox id="five"/>
+                                    <p>⭐⭐⭐⭐⭐ 5</p> */}
                                 </li>
                                 <li className="sidebar__info">
                                     <Checkbox />

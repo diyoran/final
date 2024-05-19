@@ -3,24 +3,48 @@ import { Fragment } from 'react'
 import { Helmet } from "react-helmet";
 import posterBlog from '../img/poster.jpg'
 import { Breadcrumb } from 'antd';
+import { Flex, Progress } from 'antd';
 
 export default function Profile() {
 
-    const BreadCrumb = () => (
-        <Breadcrumb
-            items={[
-                {
-                    title: <a href="/courses">My Courses</a>,
-                },
-                {
-                    title: <a href="/coursePage">Wishlist</a>,
-                },
-                {
-                    title: <a href="/blog">My Certificate</a>,
-                },
-            ]}
-        />
-    )
+
+    const Chart = () => (
+        <Flex
+            vertical
+            gap="small"
+            style={{
+                width: 180,
+            }}
+        >
+            <Progress percent={30} size={[400, 10]} trailColor={'white'}  status="active"/>
+            <Progress percent={50} size={[400, 10]} trailColor={'white'}  status="active" />
+            <Progress percent={70} size={[400, 10]} trailColor={'white'}  status="exception" />
+            <Progress percent={100} size={[400, 10]} trailColor={'white'}  />
+        </Flex>
+    );
+
+    // const Circle = () => (
+    //     <Flex gap="small" wrap>
+    //         <Progress type="circle" percent={75} format={(percent) => `${percent} Days`} />
+    //         <Progress type="circle" percent={100} format={() => 'Done'} />
+    //     </Flex>
+    // );
+
+    // const BreadCrumb = () => (
+    //     <Breadcrumb
+    //         items={[
+    //             {
+    //                 title: <a href="/courses">My Courses</a>,
+    //             },
+    //             {
+    //                 title: <a href="/coursePage">Wishlist</a>,
+    //             },
+    //             {
+    //                 title: <a href="/blog">My Certificate</a>,
+    //             },
+    //         ]}
+    //     />
+    // )
 
     return (
         <Fragment>
@@ -33,24 +57,31 @@ export default function Profile() {
 
             <div className="container">
                 <div className="profile">
-                    <div className="profile__bc">
-                        <div className="profile__avatar"></div>
-
-                    </div>
+                    <div className="profile__avatar"></div>
 
                     <div className="profile__name">
+
                         <h3>Mandy Candy</h3>
                         <p>
                             Web Developer
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                        </p>
+
+                        <div className="profile__progress">
+                            <Chart />
+                        </div>
+
                     </div>
+
 
                 </div>
 
                 <div className="profile--list">
 
-                    <div className="profile--list--breadcrumb">
-                        <BreadCrumb />
+                    <div className="profile--nav">
+                       {/*   */}
                     </div>
 
                     <div className="blog">

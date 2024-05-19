@@ -4,11 +4,17 @@ import mentor from '../img/icons/mentor.svg'
 import { Fragment, useState } from "react";
 import { Modal } from "antd";
 import { Input, Space } from 'antd';
+import Burger from '../components/burger';
 
 
 export default function Header() {
     const [IsOpenModal, setIsOpenModal] = useState(false)
     const handleClickModal = () => setIsOpenModal(prev => !prev)
+    if (IsOpenModal === true) {
+        console.log('click');
+    }
+
+
 
     const { Search } = Input;
     const onSearch = (value, _e) => console.log(value);
@@ -29,13 +35,6 @@ export default function Header() {
 
     )
 
-    // const loginBtn = document.getElementsByClassName('ant-btn-primary')
-    // const loginlink = document.getElementById('login-btn')
-    // const login = () => {
-    //     loginlink.style.display = 'none'
-    // }
-
-
     return (
         <Fragment>
             <Modal open={IsOpenModal} title={"Create New Account or Login"} onOk={handleClickModal} onCancel={handleClickModal}>
@@ -50,9 +49,14 @@ export default function Header() {
                 <div className="container-header">
                     <div className='navbar'>
 
-                        <h2 className="logo">
-                            <a href="/main">LearnHub</a>
-                        </h2>
+                        <div className="navbar__burger">
+                            <Burger />
+                            <h2 className="logo">
+                                <a href="/main">LearnHub</a>
+                            </h2>
+                        </div>
+
+
 
                         {/* <BreadCrumb /> */}
                         <div className="navbar__input">
