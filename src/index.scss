@@ -450,8 +450,11 @@
     display: block;
     // background-color: aqua;
 
-    p {
+    label {
       font-size: 20px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
     }
 
     &__item {
@@ -463,10 +466,10 @@
     }
 
     &__info {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: center;
+      // // gap: 10px;
       margin: 20px 0;
     }
 
