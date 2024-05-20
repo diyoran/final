@@ -9,7 +9,10 @@ import Burger from '../components/burger';
 
 export default function Header() {
     const [IsOpenModal, setIsOpenModal] = useState(false)
-    const handleClickModal = () => setIsOpenModal(prev => !prev)
+    const handleClickModal = (e) => {
+       e.preventDefault()
+        setIsOpenModal(prev => !prev)
+    }
     if (IsOpenModal === true) {
         console.log('click');
     }

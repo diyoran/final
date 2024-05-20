@@ -1,4 +1,5 @@
 import React from 'react'
+import { Carousel } from 'antd';
 import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
 import profile from '../img/icons/person.svg'
@@ -14,36 +15,13 @@ import mentorImg from '../img/mentor_img.png'
 
 export default function Main() {
 
-
-    // const CarouselPlay = () => (
-    //     <Carousel autoplay>
-    //         <div >
-    //             <li className="categories__card">
-    //                 <img className="categories__img" src={art} alt="error" />
-    //                 <p className="categories__text">Art & Desing</p>
-    //             </li>
-    //         </div>
-    //         <div>
-    //             <li className="categories__card">
-    //                 <img className="categories__img" src={art} alt="error" />
-    //                 <p className="categories__text">Art & Desing</p>
-    //             </li>
-    //         </div>
-    //         <div>
-    //             <li className="categories__card">
-    //                 <img className="categories__img" src={art} alt="error" />
-    //                 <p className="categories__text">Art & Desing</p>
-    //             </li>
-    //         </div>
-    //         <div>
-    //             <li className="categories__card">
-    //                 <img className="categories__img" src={art} alt="error" />
-    //                 <p className="categories__text">Art & Desing</p>
-    //             </li>
-    //         </div>
-
-    //     </Carousel>
-    // )
+    const contentStyle = {
+        height: '160px',
+        color: '#fff',
+        lineHeight: '160px',
+        textAlign: 'center',
+        background: '#364d79',
+    };
 
     return (
         <Fragment>
@@ -79,15 +57,88 @@ export default function Main() {
                     </div>
 
                     <div className='carosel'>
-                        {/* <CarouselPlay /> */}
+                        <Carousel autoplay>
+                            <div>
+                                <li className="blog__container item">
+                                    <img className="item__img" src={posterBlog} alt="error" />
+                                    <p className="item__time">
+                                        3 May 2023
+                                    </p>
+                                    <h4 className="item__title">
+                                        10 graphic design trends to get you inspired in 2021
+                                    </h4>
+                                    <p className="item__subtitle">
+                                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                    </p>
+
+                                </li>
+                            </div>
+                            <div>
+                                <li className="blog__container item">
+                                    <img className="item__img" src={posterBlog} alt="error" />
+                                    <p className="item__time">
+                                        3 May 2023
+                                    </p>
+                                    <h4 className="item__title">
+                                        10 graphic design trends to get you inspired in 2021
+                                    </h4>
+                                    <p className="item__subtitle">
+                                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                    </p>
+
+                                </li>
+                            </div>
+                            <div>
+                                <li className="blog__container item">
+                                    <img className="item__img" src={posterBlog} alt="error" />
+                                    <p className="item__time">
+                                        3 May 2023
+                                    </p>
+                                    <h4 className="item__title">
+                                        10 graphic design trends to get you inspired in 2021
+                                    </h4>
+                                    <p className="item__subtitle">
+                                        Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod.
+                                    </p>
+
+                                </li>
+                            </div>
+
+                        </Carousel>
                     </div>
 
                 </div>
 
                 <div className='cards'>
+
+
+
                     <h1>
                         Trending Courses!
                     </h1>
+
+                    <nav >
+                        <ul className='cards__nav'>
+                            <li className='cards__item'>
+                                <button> All </button>
+                            </li>
+                            <li className='cards__item'>
+                                <button> Business</button>
+                            </li>
+                            <li className='cards__item'>
+                                <button>Art & Design</button>
+                            </li>
+                            <li className='cards__item'>
+                                <button> Development</button>
+                            </li>
+                            <li className='cards__item'>
+                                <button>Marketing</button>
+                            </li>
+                            <li className='cards__item'>
+                                <button>Chemistry</button>
+                            </li>
+                        </ul>
+                    </nav>
                     <ul className="blog__container">
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
