@@ -103,22 +103,22 @@ export default function Courses() {
                                     Ratings
                                 </h2>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />⭐⭐⭐⭐⭐ 5</label>
+                                    <label><Checkbox value="5" />⭐⭐⭐⭐⭐ 5</label>
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />⭐⭐⭐⭐ 4+</label>
+                                    <label><Checkbox value="4" />⭐⭐⭐⭐ 4+</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />⭐⭐⭐ 3+</label>
+                                    <label><Checkbox value="3" />⭐⭐⭐ 3+</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />⭐⭐ 2+</label>
+                                    <label><Checkbox value="2" />⭐⭐ 2+</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />⭐ 1+</label>
+                                    <label><Checkbox value="1" />⭐ 1+</label>
 
                                 </li>
                             </ul>
@@ -128,20 +128,20 @@ export default function Courses() {
                                     Durations
                                 </h2>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />3-6 Hours</label>
+                                    <label><Checkbox value="6h" />3-6 Hours</label>
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />6-12 Hours</label>
-
-
-                                </li>
-                                <li className="sidebar__info">
-                                    <label><Checkbox value="value" />12-20 Hours</label>
+                                    <label><Checkbox value="12h" />6-12 Hours</label>
 
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />30+ Hours</label>
+                                    <label><Checkbox value="20h" />12-20 Hours</label>
+
+
+                                </li>
+                                <li className="sidebar__info">
+                                    <label><Checkbox value="30h" />30+ Hours</label>
 
 
                                 </li>
@@ -152,20 +152,20 @@ export default function Courses() {
                                     Categories
                                 </h2>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />Front-end developer</label>
+                                    <label><Checkbox value="developer" />Front-end developer</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />Web Designer</label>
+                                    <label><Checkbox value="Web" />Web Designer</label>
 
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />Management</label>
+                                    <label><Checkbox value="Management" />Management</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                    <label><Checkbox value="value" />Copywriter</label>
+                                    <label><Checkbox value="Copywriter" />Copywriter</label>
                                 </li>
 
                             </ul>
@@ -174,15 +174,15 @@ export default function Courses() {
                                     Level
                                 </h2>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />Beginner</label>
+                                <label><Checkbox value="Beginner" />Beginner</label>
                                   
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />Intermediate</label>
+                                <label><Checkbox value="Intermediate" />Intermediate</label>
                                    
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />Advanced</label>
+                                <label><Checkbox value="Advanced" />Advanced</label>
 
                                 </li>
 
@@ -192,14 +192,14 @@ export default function Courses() {
                                     Language
                                 </h2>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />English</label>
+                                <label><Checkbox value="English" />English</label>
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />Espanol</label>
+                                <label><Checkbox value="Espanol" />Espanol</label>
 
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />Russian</label>
+                                <label><Checkbox value="Russian" />Russian</label>
 
                                 </li>
 
@@ -209,17 +209,17 @@ export default function Courses() {
                                     Price
                                 </h2>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />± $200</label>
+                                <label><Checkbox value="200" />± $200</label>
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />± $400</label>
+                                <label><Checkbox value="400" />± $400</label>
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />± $600</label>
+                                <label><Checkbox value="600" />± $600</label>
                                   
                                 </li>
                                 <li className="sidebar__info">
-                                <label><Checkbox value="value" />$800 and more</label>
+                                <label><Checkbox value="800" />$800 and more</label>
                                     
 
                                 </li>

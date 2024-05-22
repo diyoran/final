@@ -27,8 +27,9 @@ const items = [
     //     type: 'divider',
     // },
     // {
-    //     label: '',
+    //     label: 'Logout',
     //     key: '3',
+    //     onClick: 
     // },
 ];
 const Burger = () => (
@@ -37,7 +38,7 @@ const Burger = () => (
             items,
         }}
         trigger={['click']}
-        
+
     >
         <a onClick={(e) => e.preventDefault()}>
             <Space>

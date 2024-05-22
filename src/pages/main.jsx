@@ -15,13 +15,9 @@ import mentorImg from '../img/mentor_img.png'
 
 export default function Main() {
 
-    const contentStyle = {
-        height: '160px',
-        color: '#fff',
-        lineHeight: '160px',
-        textAlign: 'center',
-        background: '#364d79',
-    };
+    function toCourse(){
+        window.location.href = "/coursePage"
+    }
 
     return (
         <Fragment>
@@ -59,10 +55,10 @@ export default function Main() {
                     <div className='carosel'>
                         <Carousel autoplay>
                             <div>
-                                <li className="blog__container item">
+                                <li className="blog__container item" id='design'>
                                     <img className="item__img" src={posterBlog} alt="error" />
-                                    <p className="item__time">
-                                        3 May 2023
+                                    <p className="item__category">
+                                        Design
                                     </p>
                                     <h4 className="item__title">
                                         10 graphic design trends to get you inspired in 2021
@@ -76,8 +72,8 @@ export default function Main() {
                             <div>
                                 <li className="blog__container item">
                                     <img className="item__img" src={posterBlog} alt="error" />
-                                    <p className="item__time">
-                                        3 May 2023
+                                    <p className="item__category">
+                                        Design
                                     </p>
                                     <h4 className="item__title">
                                         10 graphic design trends to get you inspired in 2021
@@ -91,8 +87,8 @@ export default function Main() {
                             <div>
                                 <li className="blog__container item">
                                     <img className="item__img" src={posterBlog} alt="error" />
-                                    <p className="item__time">
-                                        3 May 2023
+                                    <p className="item__category">
+                                        Design
                                     </p>
                                     <h4 className="item__title">
                                         10 graphic design trends to get you inspired in 2021
@@ -140,10 +136,10 @@ export default function Main() {
                         </ul>
                     </nav>
                     <ul className="blog__container">
-                        <li className="blog__container item">
+                        <li className="blog__container item" onClick={toCourse}>
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -155,8 +151,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -168,8 +164,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -181,8 +177,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -287,8 +283,8 @@ export default function Main() {
                     <ul className="blog__container">
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -300,8 +296,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -313,8 +309,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
@@ -326,8 +322,8 @@ export default function Main() {
                         </li>
                         <li className="blog__container item">
                             <img className="item__img" src={posterBlog} alt="error" />
-                            <p className="item__time">
-                                3 May 2023
+                            <p className="item__category">
+                                Design
                             </p>
                             <h4 className="item__title">
                                 10 graphic design trends to get you inspired in 2021
