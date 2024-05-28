@@ -31,7 +31,8 @@ export default function Header() {
         const savedLogin = localStorage.getItem('login');
         const savedPassword = localStorage.getItem('password');
         if (savedLogin && savedPassword) {
-            setLogin(savedLogin);
+            setShowLogout(true)
+            setLogin(savedLogin); 
             setPassword(savedPassword);
         }
     }, []);
@@ -62,6 +63,8 @@ export default function Header() {
         setPassword('');
         localStorage.removeItem('login');
         localStorage.removeItem('password');
+        setShowLogout(false)
+
     };
 
 
@@ -117,7 +120,7 @@ export default function Header() {
                             <a href="/courses">Courses</a>
                             <a href="/main#mentor-link" className='mentor'>Become a Mentor</a>
                             {showBlock1 ? (<a id='login-btn' className='login' onClick={handleClickModal}>Login</a>) : (<a href='/profile' id='profile-btn'><img src={mentor} alt="profile" /></a>)}
-                            <a  className='logout' id='logout-btn' onClick={handleLogout}>Logout</a>
+                            <a  className="logout" id='logout-btn' onClick={handleLogout}>Logout</a>
                         </div>
 
 

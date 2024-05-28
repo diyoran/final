@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import { Carousel } from 'antd';
 import { Fragment } from 'react'
 import time from '../img/icons/time.svg'
@@ -15,7 +16,28 @@ import mentorImg from '../img/mentor_img.png'
 
 export default function Main() {
 
-    function toCourse(){
+    const FilterExample = () => {
+        const [data, setData] = useState([
+            { id: 1, name: 'Item 1', category: 'Business' },
+            { id: 2, name: 'Item 2', category: 'Art' },
+            { id: 3, name: 'Item 3', category: 'Development' },
+            { id: 4, name: 'Item 4', category: 'Marketing' },
+            { id: 5, name: 'Item 5', category: 'Chemistry' },
+        ]);
+
+        const [filteredData, setFilteredData] = useState(data);
+
+        const filterData = (category) => {
+            if (category === 'All') {
+                setFilteredData(data);
+            } else {
+                const filtered = data.filter(item => item.category === category);
+                setFilteredData(filtered);
+            }
+        }
+    }
+
+    function toCourse() {
         window.location.href = "/coursePage"
     }
 
@@ -119,24 +141,24 @@ export default function Main() {
                                 <button> All </button>
                             </li>
                             <li className='cards__item'>
-                                <button> Business</button>
+                                <button onClick={() => filterData('Business')}> Business</button>
                             </li>
                             <li className='cards__item'>
-                                <button>Art & Design</button>
+                                <button onClick={() => filterData('Art')}>Art & Design</button>
                             </li>
                             <li className='cards__item'>
-                                <button> Development</button>
+                                <button onClick={() => filterData('Development')}> Development</button>
                             </li>
                             <li className='cards__item'>
-                                <button>Marketing</button>
+                                <button onClick={() => filterData('Marketing')}>Marketing</button>
                             </li>
                             <li className='cards__item'>
-                                <button>Chemistry</button>
+                                <button onClick={() => filterData('Chemistry')}>Chemistry</button>
                             </li>
                         </ul>
                     </nav>
                     <ul className="blog__container">
-                        <li className="blog__container item" onClick={toCourse}>
+                        <li className="blog__container item" onClick={toCourse} key={item.id}>
                             <img className="item__img" src={posterBlog} alt="error" />
                             <p className="item__category">
                                 Design
@@ -349,4 +371,5 @@ export default function Main() {
 
     )
 }
+
 

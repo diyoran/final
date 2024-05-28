@@ -1,0 +1,158 @@
+@media (max-width: 480px) {
+
+    h1 {
+        width: 50%;
+        margin: unset;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-left: 30px;
+        justify-content: center;
+        position: absolute;
+
+
+        &__left {
+            display: none;
+        }
+    }
+
+    .banner {
+        margin: 15px;
+        width: 500px;
+        height: 600px;
+    }
+
+    .carosel {
+        display: none;
+    }
+
+    .info {
+        &__title {
+            padding-top: 30px;
+            font-size: 40px;
+            width: 400px;
+        }
+
+        &__subtitle {
+            padding-bottom: 20px;
+            font-size: 20px;
+            width: 300px;
+        }
+
+        ul {
+            width: 300px;
+            flex-direction: column;
+            padding: 0;
+            align-items: normal;
+
+        }
+
+        .feature {
+            padding-top: 20px;
+
+            img {
+                width: 25px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .cards {
+        margin: 300px 0;
+
+        &__nav {
+            gap: 10px;
+        }
+
+        &__item {
+            button {
+                width: 80px;
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    .item {
+        width: 180px;
+        height: 250px;
+
+        &__category {
+            width: 80px;
+            left: 50px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .categories {
+
+        &__card {
+            width: 180px;
+            height: 250px;
+            margin: 0;
+
+
+        }
+
+        &__text {
+            font-size: 25px;
+        }
+    }
+
+    .counter {
+        &__item {
+            width: 150px;
+        }
+
+        &__img {
+            width: 30px;
+        }
+
+        &__number {
+            font-size: 15px;
+        }
+    }
+
+    .table {
+        flex-direction: column;
+        height: 900px;
+
+        &__title {
+            font-size: 35px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .footer-info {
+        width: 250px;
+    }
+
+    .footer-articles {
+        width: 400px;
+    }
+
+    .blog__container {
+        margin: 10px;
+    }
+
+    .categories__cards {
+        gap: 20px;
+
+    }
+}
